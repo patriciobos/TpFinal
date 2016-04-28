@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--
+========================================================
+
+****    PROYECTO CAPEAR - Panel de control         *****
+
+========================================================
+-->
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=windows-1252" />
+
+<title>CAPEAR by Bos/Petrella</title>
+
+<link rel="stylesheet" type="text/css" href="_indexpanel.css" />
+<script type="text/JavaScript" src="_indexpanel.js"></script>
+
+</head>
+
+
+<body>
+
+
+
+<script type="text/JavaScript" ><!--js
+habilitar_config(1); //-->
+</script>
+
+<table id="intermedia"><td style="text-align:left;">
+AYUDA: Haciendo clic en cada encabezado se obtendrá información sobre su significado y uso.
+</td><td style="text-align:right;">
+<a href="_indexconfig.html">CONFIGURACIÓN</a>
+</td></table>
+
+<form method="get" action="cgi.shtml" target="cgi">
+<br />
+<table id="principal" border="2">
+
+<tr id="encabezado">
+<th style="width:040px;" onmousedown="ayuda(aACTPT);"> Puerto</th> <!-- <br /># -->
+<th style="width:060px;" onmousedown="ayuda(aSTATU);"> Estado<br /><i>teórico</i></th>
+<th style="width:080px;" onmousedown="ayuda(aSWMAN);"> Switch<br />manual</th>
+<th style="width:060px;" onmousedown="ayuda(aRTCMD);"> modo<br />R.T.C.</th>
+<th style="width:060px;" onmousedown="ayuda(aHR_ON);"> Hora<br />ON</th>
+<th style="width:060px;" onmousedown="ayuda(aHR_OF);"> Hora<br /><font size="-2">OFF/RST</font></th>
+<th style="width:070px;" onmousedown="ayuda(aRDLAY);"> <font size="-1">Duración<br /><font size="-1">OFF@RST</font></th>
+<th style="width:050px;" onmousedown="ayuda(aRAUTO);"> Auto<br />RST</th>
+<th style="width:120px;" onmousedown="ayuda(aIP___);"> Dirección IP</th>
+<th style="width:070px;" onmousedown="ayuda(aRPERI);"> <font size="-1">Intervalo<br />e/ PINGs</font></th>
+<th style="width:070px;" onmousedown="ayuda(aRTRIG);"> N# fallos<br /><font size="-1">para RST</font></th>
+<th width="*" 		 ondblclick="switch_debug();"> Reservado<br /><i>Estado detectado</i></th>		<!-- onclick="backgroundimage_roll();" -->
+</tr>
+
+
+<!--Puertos a partir de aquí -->
+
+<!-- Java deshabilitado BEGIN -->
+<tr id="NoJavaScript"><th colspan="12" class="NoJavaScript">
+JavaScript no funciona. Esta interfaz necesita JavaScript habilitado para funcionar.
+</th></tr>
+<script type="text/JavaScript" ><!--js
+JavaScriptEnabled(); //-->
+</script>
+<!-- Java deshabilitado END -->
+
+<script type="text/JavaScript" ><!--js
+for(var i=PRT_pri;i<=PRT_ult;i++) document.write(listar_puerto(i)); //-->
+</script>
+
+</table>
+
+<script type="text/JavaScript" ><!--js
+document.write(boton_aplicar()); //-->
+</script>
+
+</form>
+<br />
+
+<iframe src="cgi.shtml" id="iframe" name="cgi" scrolling="no">
+*** VENTANA PARA DEBUG ***
+</iframe>
+
+</body>
+</html>

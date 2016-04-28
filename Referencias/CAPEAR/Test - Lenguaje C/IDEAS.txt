@@ -1,0 +1,9 @@
+*Para obtener los valores a partir de la cadena GET:
+
+
+-Tener variables superglobales
+-Pre-asignar valores "default" a estas variables superglobales
+-Si la variable representa un elemento "optativo" en la cadena GET (ej: checkbox --puede no estar),
+	pre-asignarle el valor de "no-está" aunque necesite que por defecto esté; en este caso lo 
+	marcaré como "checked" en la página web original y al cargarla...
+-Asignar una variable superglobal para cada valor; ej: hora-on, hora-of, ip-addr, etc.

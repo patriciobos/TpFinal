@@ -1,0 +1,95 @@
+RADIO-BUTTONS:
+
+si no hay  nada seleccionado, no genera cadena
+si hay algo seleccionado, el valor es su "value"
+*Ejemplo: <name>=<value> RAD=opc1
+
+CHECKBOX:
+
+si no esta chequeado, no hay cadena
+si está chequeado toma el valor "on"
+*Ejemplo: <name>=<value>	CHK=on
+
+TEXT:
+
+si no hay texto escrito, de todos modos escribe su <name>
+siempre envía algo, como mínimo su nombre seguido de un =
+Los espacios se representan con el caracter + 
+Caracteres de ASCII extendido se indican con % y el valor hexa
+*Ejemplos: <name>=<value>
+(nada escrito)	TXT=
+Hola Pato	TXT=Hola+Pato
+esdrújulo	TXT=esdr%FAjulo
+
+
+
+
+La cadena que se adosa se pega inmediatamente del fin de archivo en el browser y tiene el siguiente formato:
+
+index.html ? <name>=<value> & <name>=<value> & ...
+
+El "?" señaliza el comienzo de la cadena de datos
+El "&" separa los diferentes datos
+
+
+Ejemplos reales de cadenas enviadas:
+
+SHARED_FOLDERS/R&W/ALIVE2/index.html?ACTPT1=on&RTCMD1=ONOFF&HR_ON1=00%3A00&HR_OF1=23%3A59&submit=APLICAR
+SHARED_FOLDERS/R&W/ALIVE2/index.html?ACTPT1=on&RTCMD1=DESAC&submit=APLICAR
+SHARED_FOLDERS/R&W/ALIVE2/index.html?ACTPT1=on&RTCMD1=RESET&HR_OF1=23%3A59&RDLAY1=30&submit=APLICAR
+SHARED_FOLDERS/R&W/ALIVE2/index.html?ACTPT1=on&RTCMD1=RESET&HR_OF1=23%3A59&RDLAY1=1&RAUTO1=on&IP___1=100.0.0.1&RPERI1=4&RTRIG1=2&submit=APLICAR
+SHARED_FOLDERS/R&W/ALIVE2/index.html?ACTPT1=on&RTCMD1=DESAC&RDLAY1=1&RAUTO1=on&IP___1=100.0.0.1&RPERI1=99&RTRIG1=2&submit=APLICAR
+
+
+Longitud máxima de toda la cadena transmitida mediante GET:
+
+Cada puerto envía 9 variables,
+	Cada variable consiste en:
+	5 char de variable
+	1 char de puerto
+	1 char =  (separador con su dato)
+	X char de su dato (varía -- la consideraremos cero por ahora)
+	1 char &  (separador con la siguiente variable)
+	------------------------
+	8 char + chars de datos de 1 variable (una sola variable de un solo puerto -- obviamente este numero varía segun la variable a tratar)
+
+Son 9 variables, por lo tanto son 9 var x (8 char + chars de datos de 1 variable) 
+
+	aplicando la propiedad distributiva:
+				
+				9 var x 8 char + chars de datos de las 9 variables** 
+
+	**Todos los datos juntos de un solo puerto suman entre 29 y 39 chars (sólo varían IP___[7-15], RDLAY[1-2] y RPERI[1-2].)
+
+				9 var x 8 char + 39 chars = 111 chars máximo de UN puerto
+
+Son 8 puertos, por lo tanto son 888 chars máximo en la cadena GET
+
+Pero la cadena GET incluye también:
+
+	XX char: URL*
+	 1 char: ? (iniciador de variables/datos)
+	13 char: LISTO=APLICAR
+
+
+¿Cuánto es el máximo de la URL? La misma se compone de:
+
+	 7 char: http://
+	15 char: dirección IP
+	 1 char: /
+	11 char: index.html
+	----------------------
+	34 char
+
+Volviendo a la cadena GET:
+
+	 34 char: URL
+	  1 char: ? (iniciador de variables/datos)
+	888 char: VARS+DATOS de los 8 puertos
+	 13 char: LISTO=APLICAR
+	----------------------
+	936 char, casi MIL!!!
+
+ __________________________________________________________________________
+[y la respuesta final es que la cadena GET puede tener hasta 936 caracteres]
+ --------------------------------------------------------------------------

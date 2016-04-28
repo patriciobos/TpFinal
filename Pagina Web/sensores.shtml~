@@ -1,0 +1,25 @@
+<html>
+
+
+<meta http-equiv="refresh" content="3">
+
+<style>
+body
+{	color:black;
+	//background-color: #66CC66;
+	text-align: right;
+	font: bold 3pc Courier, Trebuchet MS, Verdana, Tahoma, Arial, Sans;
+	}
+</style>
+
+<!--onLoad="window.setTimeout(&quot;location.href='rx.shtml'&quot;,1000);"-->
+
+<body >
+
+
+<!--#g4rx-->	<!-- funcion_obtener_valor(); -->
+
+4096  <!--valor meramente ilustrativo para antes de que funcionara la pagina -->
+
+</body>
+</html>

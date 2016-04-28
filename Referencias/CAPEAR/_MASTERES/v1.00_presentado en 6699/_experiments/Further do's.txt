@@ -1,0 +1,22 @@
+Aca pondre cosas a desarrollar a futuro:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+-Que el usuario reciba un feedback de si su configuración fue correctamente tomada 
+  (en otras palabras, si su "password actual" fue aceptada"
+
+-Que el encabezado de la página sea fijo
+
+
+-La password podria guardarse en forma de "hash" en lugar de plana.
+ Hay un chabón que desarrollo un hash-calculator en JavaScript. Si consigo desarrollar lo mismo en C y
+ que corra dentro del LPC, => las passwords podrian almacenarse en forma de hashes para mayor seguridad.
+	http://ablazex.com/hasher.html
+
+
+-Leer archivos locales usando JavaScript (para cargar la configuración guardada).
+ Lo más cerca que vi de lo que necesito es:
+ 	http://ablazex.com/demos/load.html    --complementar_con--> http://ablazex.com/demos/csv.txt
+ EL primero es un codigo JS que lee datos de csv.txt
+
+-Javascript: verificar en el panel de control que no existan 2 IP iguales antes de hacer APLICAR

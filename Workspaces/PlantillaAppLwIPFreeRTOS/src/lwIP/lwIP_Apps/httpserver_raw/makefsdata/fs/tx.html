@@ -1,0 +1,29 @@
+<html>
+<head>
+</head>
+
+<script>
+function time_hhmmss(id)		//antes:	time_hhmm(id)
+{
+	date = new Date;
+    h = date.getHours();
+    if(h<10) h = "0"+h;
+    m = date.getMinutes();
+    if(m<10) m = "0"+m;
+    s = date.getSeconds();
+    if(s<10) s = "0"+s;
+	hhmmss=h+':'+m+':'+s;			//antes:	document.getElementById(id).value = hhmm;	// valido para ser llamada desde el HTML
+	document.getElementById(id).innerHTML= hhmmss;
+	return;	// hhmmss+'';
+    }
+</script>
+
+
+<body onLoad="time_hhmmss('disp');">
+
+<h2 id="disp">
+Carga inicial
+</h2>
+
+</body>
+</html>

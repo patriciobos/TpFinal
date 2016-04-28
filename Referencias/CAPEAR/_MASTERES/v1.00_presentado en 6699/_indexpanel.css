@@ -1,0 +1,109 @@
+
+
+
+/*
+========================================================
+
+****    PROYECTO CAPEAR - Definición de estilos	   *****
+
+========================================================
+*/
+
+
+/*      ***************** NOTAS ************************
+           Resolucion de prueba: windowsize: 1024x716
+        ************************************************
+*/
+
+
+body
+{	background: #ffffff; /* url('fondo0.gif') repeat fixed; #cceedd / scroll; */
+	display:block;
+	width:994px;
+	margin: 0 auto;
+	}
+
+/*----------------------------------------------------*/
+table#intermedia
+{	position:static; width:976px;
+	font-family:Georgia,Helvetica; font-size:0.8pc;
+	margin:0 auto 3px auto;
+	}
+table#principal
+{	position:static; width:988px;
+	font-family:Georgia,Helvetica; font-size:0.8pc;
+	font-align:center;
+
+	margin-left:auto; margin-right:auto;
+	}
+table#del_boton
+{	position:static;
+	border:hidden;
+	margin-left:auto; margin-right:auto;
+	}
+
+/* COM tabla */
+
+tr#encabezado
+{	background: #33bb33;
+	height:45px;
+
+	}
+.NoJavaScript
+{	font: 1.6pc Tahoma; color:blue;	background:white;
+	padding-bottom:15px;padding-top:15px;
+	}
+tr.linea
+{	background: #ddccdd;
+	font-size:0.9pc;
+	}
+tr.linea:hover
+{	background: #bbaabb;
+	}
+.ACTPT
+{	text-align:right;
+	padding-right:6px;
+	}
+.STATU
+{	color:#ACA899;
+	}
+.IP___,.HR_HR,.RDLAY,.RPERI,.RTRIG
+{	font-size:0.9pc;
+	}
+.IP___
+{	width:94%;
+	}
+.SWMAN
+{	width:94%;
+	}
+.HR_HR
+{	width:66%;
+	}
+.RDLAY
+{	width:1.6pc;
+	}
+.RPERI
+{	width:1.2pc;
+	}
+.RTRIG
+{	width:0.8pc;
+	}
+.unidades
+{	color:#5A6670;
+	}
+
+/* FIN tabla */
+
+#submit
+{	display:none;
+	position:static;
+	width:984px;height:30px;
+	font: bold 1.2pc Verdana,Tahoma,Arial,Sans;
+	color:white;
+	}
+#iframe
+{ 	display:none;			/* none; ó inline; */
+	position:static;
+	width:984px;height:100px;
+	border: 3px solid black;
+	}

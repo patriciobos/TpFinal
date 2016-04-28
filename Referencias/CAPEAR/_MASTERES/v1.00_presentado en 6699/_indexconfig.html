@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--
+========================================================
+
+****    PROYECTO CAPEAR - Interfaz de configuración  ***
+
+========================================================
+-->
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=windows-1252" />
+
+<title>CAPEAR by Bos/Petrella</title>
+
+<link rel="stylesheet" type="text/css" href="_indexconfig.css" />
+<script type="text/JavaScript" src="_indexconfig.js"></script>
+
+</head>
+
+
+<body>
+
+
+
+<script type="text/JavaScript" ><!--js
+habilitar_config(1); //-->
+</script>
+
+<table id="intermedia"><td style="text-align:left;">
+&nbsp;
+</td><td style="text-align:right;">
+<a href="_indexpanel.html">PANEL DE CONTROL</a>
+</td></table>
+
+<form method="get" action="_indexpanel.html"> <!--target="cgi"-->
+<br />
+<table id="principal" border="2">
+
+<tr id="encabezado">
+<th colspan="3" ondblclick="switch_debug();">Establecer la configuración del dispositivo</th>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Configuracion a partir de aquí -->
+
+<!-- Java deshabilitado BEGIN -->
+<tr id="NoJavaScript"><th colspan="3" class="NoJavaScript">
+JavaScript no funciona. Esta interfaz necesita JavaScript habilitado para funcionar.
+</th></tr>
+<script type="text/JavaScript" ><!--js
+JavaScriptEnabled(); //-->
+</script>
+<!-- Java deshabilitado END -->
+
+<script type="text/JavaScript" ><!--js
+document.write(listar_configs()); //-->
+</script>
+
+</table>
+
+<script type="text/JavaScript" ><!--js
+document.write(boton_aplicar()); //-->	
+</script>
+
+</form>
+<br />
+
+<iframe src="cgi.shtml" id="iframe" name="cgi" scrolling="no">
+*** VENTANA PARA DEBUG ***
+</iframe>
+
+</body>
+</html>

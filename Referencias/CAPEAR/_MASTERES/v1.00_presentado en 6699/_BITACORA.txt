@@ -1,0 +1,68 @@
+:beta03 (punto de partida)
+
+
+-Verifica que la dirección IP no sea broadcast ni "de red"
+-Desactiva el botón de envío de datos si detecta algún valor erroneo
+-Limita los valores posibles para Tau-RESET, Intervalo-PING, N#FALLOS
+
+:beta04
+
+
+-Convierte el boton de envio de datos en un boton de "ayuda" en caso de datos erroneos
+-Convierte la versión en link (para facilitar la "recarga" de pagina sin cadena de GET --DEBUG)
+-Easter egg: el modo "debug" muestra que navegador y versión se están usando
+
+:beta05
+
+
+-Se incorpora ayuda explicativa para cada ítem de la tabla
+
+:beta06
+
+
+-Cambiado el orden de las columnas, con configuración IP sólo activo si se activa AutoRST
+-Se mejoro la rutina de validación de valores ingresados, se aceleró el programa en 100%
+
+:beta07
+
+
+-En el botón de "submit" se cambió dicha denominación por la de "Listo"
+
+:beta07½
+
+
+-Se 'variabiliza' el puerto inicial (PRT_pri) y el puerto final (PRT_ult), esto afecta tanto a main.js como a index.html.
+	NOTA: Ahora la cantidad de puertos se especifica exclusivamente desde main.js
+-JS: Cambio el orden de varias lineas (variables, etc) para que coincidan con el nuevo orden que muestra la interfaz (ej: IP casi al final)
+-Tabla de los puertos:
+	*cambio en encabezados: Estado teórico y Reservado/Estado detectado
+	*Estado detectado: meto un "iframe" para poder leer el estado
+	*Botón CONMUTAR: Ahora, ADEMAS de mostrar el estado "teórico", llama a la función de SWITCH para conmutar realmente el estado y a la
+	 función de detección real del estado.
+	Problema: el javascript se vale del caché y entonces no fuerza el "retrive" de la página web oculta que es la que causa el conmutado.
+	Solución: se invoca la página con un "query" ficticio cuyo contenido es random (cambia siempre) y esto hace que el navegador se lo
+		solicite al server en vez de tomarlo del propio caché, pues se supone que una página pedida con query será distinta según
+		sea el contenido de dicho query, lo cual no puede ser anticipado por el caché (esto amerita un INF.TECNICO)
+-FUNCIONA EMBEBIDO!* para ello es necesario insertar el contenido de los archivos main.css y main.js dentro de index.html
+
+:beta10
+
+
+-Cambiado el fondo (pa joder nomáh)
+-Cambiados algunos textos de la "ayuda" pop-up de los encabezados y el botón aplicar
+-
+
+
+
+Futuro:
+
+-Lógica negativa (invertir la cartelería)
+-Incorporar botón de Guardar en Flash separado de Aplicar
+-Modificar la interfaz de configuración haciéndola mas minimalista:
+	*Ping manual vía pop-up a rellenar 
+	*Idem para establecer la hora del RTC
+	*Idem para establecer la IP interna
+
+
+
+

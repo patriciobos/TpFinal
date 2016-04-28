@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;lpc_chip_43xx_m0&apos;" deleteContents="true" description="Delete resource &apos;lpc_chip_43xx_m0&apos;" element1="/lpc_chip_43xx_m0" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1460125306867"/>&#x0A;<refactoring comment="Delete resource &apos;lpc_board_nxp_lpcxpresso_4337_m0&apos;" deleteContents="true" description="Delete resource &apos;lpc_board_nxp_lpcxpresso_4337_m0&apos;" element1="/lpc_board_nxp_lpcxpresso_4337_m0" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1460125311064"/>
+</session>

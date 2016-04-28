@@ -1,0 +1,6 @@
+18:03:38 **** Incremental Build of configuration Debug for project lwip_freertos_webserver ****
+make -r all 
+make: No se hace nada para «all».
+
+18:03:38 Build Finished (took 58ms)
+
