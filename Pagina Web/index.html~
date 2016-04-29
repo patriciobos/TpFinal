@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="es-AR">
 
 <head>
 
@@ -55,7 +55,7 @@ iframe.section{
 
 <div id="nav">
 <a href="_indexcontrol.html">Control</a><br>
-<a href="_indexconfig.html">Configuración</a><br>
+<a href="_indexconfig.html">Config</a><br>
 
 </div>
 
@@ -66,6 +66,10 @@ iframe.section{
 <h2>ACTUADORES</h2>
 
 <form name="actuadores" action="index.html" method="get">
+<input type="checkbox" name="actuador1" value="0"> actuador1<br>
+<input type="checkbox" name="actuador2" value="0"> actuador2<br> 
+<input type="checkbox" name="actuador3" value="0"> actuador3<br>
+<input type="checkbox" name="actuador4" value="0"> actuador4<br> 
 
 </form>
 </div>
