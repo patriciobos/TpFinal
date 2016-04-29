@@ -9,41 +9,7 @@
 <meta name="author" content="Patricio Bos">
 <meta charset="UTF-8">
 
-<style>
-#header {
-    background-color:black;
-    color:white;
-    text-align:center;
-    padding:5px;
-}
-#nav {
-    line-height:30px;
-    background-color:#eeeeee;
-    height:300px;
-    width:150px;
-    float:left;
-    padding:5px;
-}
-div.section {
-    background-color:#eeeeee;
-    width:450px;
-    float:left;
-    padding:10px;
-}
-#footer {
-    background-color:black;
-    color:white;
-    clear:both;
-    text-align:center;
-    padding:5px;
-}
-iframe.section{
-    display:inline;			/* none; ó inline; */
-    position:static;
-    width:400px;height:400px;
-    border:1px solid black;
-}
-</style> 
+<link rel="stylesheet" href="styles.css">
 
 </head>
 
@@ -59,32 +25,120 @@ iframe.section{
 
 </div>
 
+<!-- ------------------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------------------ -->
+
 <div id="section">
+
+<!-- ------------------------------------------------------------------------------------ -->
 
 <div id="div_actuadores" class="section">
 
 <h2>ACTUADORES</h2>
 
-<form name="actuadores" action="index.html" method="get">
-<input type="checkbox" name="actuador1" value="0"> actuador1<br>
-<input type="checkbox" name="actuador2" value="0"> actuador2<br> 
-<input type="checkbox" name="actuador3" value="0"> actuador3<br>
-<input type="checkbox" name="actuador4" value="0"> actuador4<br> 
+<form name="actuadores" action="actuadores.cgi" method="get">
+
+ <table id="tabla_actuadores">
+  <tr>
+    <th>Nombre</th>
+    <th>Estado</th>
+    <th>Control</th>
+  </tr>
+  <tr>
+    <td>Actuador1</td>
+    <td><!--#echo var="actuador1"--></td>
+    <td><input type="submit" name="accion" id="actuador1" value="INICIAR" /></td>
+  </tr>
+  <tr>
+    <td>Actuador2</td>
+    <td><!--#echo var="actuador2"--></td>
+    <td><input type="submit" name="accion" id="actuador2" value="INICIAR" /></td>
+  </tr>
+  <tr>
+    <td>Actuador3</td>
+    <td><!--#echo var="actuador3"--></td>
+    <td><input type="submit" name="accion" id="actuador3" value="INICIAR" /></td>
+  </tr>
+  <tr>
+    <td>Actuador4</td>
+    <td><!--#echo var="actuador4"--></td>
+    <td><input type="submit" name="accion" id="actuador4" value="INICIAR" /></td>
+  </tr>
+</table> 
 
 </form>
+
 </div>
 
+<!-- ------------------------------------------------------------------------------------ -->
+
 <div id="div_sensores" class="section">
+
 <h2>SENSORES</h2>
-<iframe src="sensores.shtml" id="if_sensores" name="sensores" scrolling="no" class="section">
-*** VENTANA AL VALOR RECIBIDO ***
-</iframe>
+
+<table id="tabla_actuadores">
+  <tr>
+    <th>Nombre</th>
+    <th>Estado</th>
+    <th>Control</th>
+  </tr>
+  <tr>
+    <td>Actuador1</td>
+    <td><!--#echo var="actuador1"--></td>
+    <td><input type="checkbox" name="actuador1" value="0"></td>
+  </tr>
+  <tr>
+    <td>Actuador2</td>
+    <td><!--#echo var="actuador2"--></td>
+    <td><input type="checkbox" name="actuador2" value="0"></td>
+  </tr>
+  <tr>
+    <td>Actuador3</td>
+    <td><!--#echo var="actuador3"--></td>
+    <td><input type="checkbox" name="actuador3" value="0"></td>
+  </tr>
+  <tr>
+    <td>Actuador4</td>
+    <td><!--#echo var="actuador4"--></td>
+    <td><input type="checkbox" name="actuador4" value="0"></td>
+  </tr>
+</table> 
+
 </div>
+
+<!-- ------------------------------------------------------------------------------------ -->
 
 <div id="div_alarmas" class="section">
 <h2>ALARMAS</h2>
+
+<table id="tabla_actuadores">
+  <tr>
+    <th>Alarma</th>
+    <th>Estado</th>
+    <th>Deshabilitar</th>
+  </tr>
+  <tr>
+    <td>Temperatura</td>
+    <td><!--#echo var="alarma1"--></td>
+    <td><input type="checkbox" name="alarma1" value="0"></td>
+  </tr>
+  <tr>
+    <td>Nivel de Agua</td>
+    <td><!--#echo var="alarma2"--></td>
+    <td><input type="checkbox" name="alarma2" value="0"></td>
+  </tr>
+  <tr>
+    <td>pH</td>
+    <td><!--#echo var="alarma3"--></td>
+    <td><input type="checkbox" name="alarma3" value="0"></td>
+  </tr>
+</table> 
+
 </div>
 </div>
+
+<!-- ------------------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------------------ -->
 
 <div id="footer">
 Copyright &copy Patricio Bos
