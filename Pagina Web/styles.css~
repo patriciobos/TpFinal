@@ -1,5 +1,7 @@
 body{
-background-color:#eeeeee;
+    background-color:#eeeeee;
+    margin:5px;
+    padding:0px;
 }
 
 /*---------------------------*/
@@ -20,11 +22,22 @@ background-color:#eeeeee;
     float:left;
     padding:5px;
 }
-div.section {
+div.outer{
     background-color:#eeeeee;
+    text-align:center;
+    width: 800px;
+margin: 0 auto;
+}
+
+div.inner {
+    background-color:#eeeeee;
+    width: 20%;
+    margin: 0 auto;
+display:inline-block;
     width:450px;
-    float:left;
+/*    float:left;*/
     padding:10px;
+   
 }
 #footer {
     background-color:black;
@@ -40,13 +53,14 @@ div.section {
 
 #tabla_actuadores{
     background-color:#eeeeee;
+    border: 1px solid #ddd;
     width: 100%;
 }
 
 #tabla_actuadores th {
-background-color:#eeeeee;
-color:black;    
-padding: 10px;
+    background-color:#eeeeee;
+    color:black;    
+    padding: 10px;
     text-align: center;
     height: 20px;
 }

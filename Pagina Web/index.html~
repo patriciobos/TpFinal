@@ -28,11 +28,13 @@
 <!-- ------------------------------------------------------------------------------------ -->
 <!-- ------------------------------------------------------------------------------------ -->
 
-<div id="section">
+<div id="section" style="width:100%" class="outer">
 
 <!-- ------------------------------------------------------------------------------------ -->
+<!-- ACTUADORES -->
+<!-- ------------------------------------------------------------------------------------ -->
 
-<div id="div_actuadores" class="section">
+<div id="div_actuadores" class="inner">
 
 <h2>ACTUADORES</h2>
 
@@ -71,45 +73,40 @@
 </div>
 
 <!-- ------------------------------------------------------------------------------------ -->
+<!-- SENSORES -->
+<!-- ------------------------------------------------------------------------------------ -->
 
-<div id="div_sensores" class="section">
+<div id="div_sensores" class="inner">
 
 <h2>SENSORES</h2>
 
 <table id="tabla_actuadores">
   <tr>
     <th>Nombre</th>
-    <th>Estado</th>
-    <th>Control</th>
+    <th>Valor</th>
   </tr>
   <tr>
-    <td>Actuador1</td>
-    <td><!--#echo var="actuador1"--></td>
-    <td><input type="checkbox" name="actuador1" value="0"></td>
-  </tr>
+    <td>Temperatura</td>
+    <td><!--#echo var="sensor1"--></td>
+   </tr>
   <tr>
-    <td>Actuador2</td>
-    <td><!--#echo var="actuador2"--></td>
-    <td><input type="checkbox" name="actuador2" value="0"></td>
-  </tr>
+    <td>Nivel de Agua</td>
+    <td><!--#echo var="sensor2"--></td>
+   </tr>
   <tr>
-    <td>Actuador3</td>
-    <td><!--#echo var="actuador3"--></td>
-    <td><input type="checkbox" name="actuador3" value="0"></td>
-  </tr>
-  <tr>
-    <td>Actuador4</td>
-    <td><!--#echo var="actuador4"--></td>
-    <td><input type="checkbox" name="actuador4" value="0"></td>
-  </tr>
+    <td>pH</td>
+    <td><!--#echo var="sensor3"--></td>
+   </tr>
 </table> 
 
 </div>
 
 <!-- ------------------------------------------------------------------------------------ -->
+<!-- ALARMAS -->
+<!-- ------------------------------------------------------------------------------------ -->
 
-<div id="div_alarmas" class="section">
-<h2>ALARMAS</h2>
+<div id="div_alarmas" class="inner">
+<h2 style=text-align:"left">ALARMAS</h2>
 
 <table id="tabla_actuadores">
   <tr>

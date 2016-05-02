@@ -20,21 +20,22 @@
 </div>
 
 <div id="nav">
-<a href="_indexcontrol.html">Control</a><br>
-<a href="_indexconfig.html">Config</a><br>
+<a href="indexoverview.shtml">Overview</a><br>
+<a href="indexcontrol.shtml">Control</a><br>
+<a href="_indexconfig.shtml">Config</a><br>
 
 </div>
 
 <!-- ------------------------------------------------------------------------------------ -->
 <!-- ------------------------------------------------------------------------------------ -->
 
-<div id="section">
+<div id="section" style="width:100%" class="outer">
 
 <!-- ------------------------------------------------------------------------------------ -->
 <!-- ACTUADORES -->
 <!-- ------------------------------------------------------------------------------------ -->
 
-<div id="div_actuadores" class="section">
+<div id="div_actuadores" class="inner">
 
 <h2>ACTUADORES</h2>
 
@@ -76,7 +77,7 @@
 <!-- SENSORES -->
 <!-- ------------------------------------------------------------------------------------ -->
 
-<div id="div_sensores" class="section">
+<div id="div_sensores" class="inner">
 
 <h2>SENSORES</h2>
 
@@ -105,8 +106,8 @@
 <!-- ALARMAS -->
 <!-- ------------------------------------------------------------------------------------ -->
 
-<div id="div_alarmas" class="section">
-<h2>ALARMAS</h2>
+<div id="div_alarmas" class="inner">
+<h2 style=text-align:"left">ALARMAS</h2>
 
 <table id="tabla_actuadores">
   <tr>

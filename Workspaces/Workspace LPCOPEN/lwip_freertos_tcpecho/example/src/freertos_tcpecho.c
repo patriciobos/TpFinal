@@ -111,8 +111,8 @@ static void vSetupIFTask(void *pvParameters) {
 	IP4_ADDR(&ipaddr, 0, 0, 0, 0);
 	IP4_ADDR(&netmask, 0, 0, 0, 0);
 #else
-	IP4_ADDR(&gw, 192, 168, 200, 1);
-	IP4_ADDR(&ipaddr, 192, 168, 200, 234);
+	IP4_ADDR(&gw, 192, 168, 0, 1);
+	IP4_ADDR(&ipaddr, 192, 168, 0, 234);
 	IP4_ADDR(&netmask, 255, 255, 255, 0);
 #endif
 
