@@ -1,0 +1,16 @@
+13:10:04 **** Incremental Build of configuration Debug for project ControlAcuario ****
+make -r all 
+Building target: ControlAcuario.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/lpc_chip_43xx/Debug" -Xlinker -Map="ControlAcuario.map" -Xlinker --gc-sections -mcpu=cortex-m4 -mthumb -T "ControlAcuario_Debug.ld" -o "ControlAcuario.axf"  ./src/ControlAcuario.o ./src/cr_startup_lpc43xx.o ./src/crp.o ./src/sysinit.o   -llpc_chip_43xx
+Finished building target: ControlAcuario.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "ControlAcuario.axf"; # arm-none-eabi-objcopy -v -O binary "ControlAcuario.axf" "ControlAcuario.bin" ; # checksum -p LPC4337 -d "ControlAcuario.bin";
+   text	   data	    bss	    dec	    hex	filename
+   4004	      0	     16	   4020	    fb4	ControlAcuario.axf
+ 
+
+13:10:04 Build Finished (took 331ms)
+

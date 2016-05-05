@@ -1,14 +1,17 @@
-12:20:14 **** Incremental Build of configuration Debug for project lwip_freertos_webserver ****
+14:46:52 **** Incremental Build of configuration Debug for project lwip_freertos_webserver ****
 make -r all 
-Building file: ../lwip/src/arch/lpc18xx_43xx_emac.c
+Building file: ../lwip/src/netif/etharp.c
 Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__MULTICORE_NONE -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M4 -I"/home/pato/Embebidos/tpfinal/test/lpc_chip_43xx/inc" -I"/home/pato/Embebidos/tpfinal/test/lpc_board_nxp_lpcxpresso_4337/inc" -I"/home/pato/Embebidos/tpfinal/test/lwip_freertos_webserver/example/inc" -I"/home/pato/Embebidos/tpfinal/test/lwip_freertos_webserver/lwip/inc" -I"/home/pato/Embebidos/tpfinal/test/lwip_freertos_webserver/lwip/inc/ipv4" -I"/home/pato/Embebidos/tpfinal/test/lwip_freertos_webserver/fatfs/inc" -I"/home/pato/Embebidos/tpfinal/test/lwip_freertos_webserver/freertos/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -specs=redlib.specs -MMD -MP -MF"lwip/src/arch/lpc18xx_43xx_emac.d" -MT"lwip/src/arch/lpc18xx_43xx_emac.o" -MT"lwip/src/arch/lpc18xx_43xx_emac.d" -o "lwip/src/arch/lpc18xx_43xx_emac.o" "../lwip/src/arch/lpc18xx_43xx_emac.c"
-../lwip/src/arch/lpc18xx_43xx_emac.c: In function 'low_level_init':
-../lwip/src/arch/lpc18xx_43xx_emac.c:576:31: error: 'BOARD_ENET_PHY_ADDR' undeclared (first use in this function)
-  Chip_ENET_Init(LPC_ETHERNET, BOARD_ENET_PHY_ADDR);
-                               ^
-../lwip/src/arch/lpc18xx_43xx_emac.c:576:31: note: each undeclared identifier is reported only once for each function it appears in
-make: *** [lwip/src/arch/lpc18xx_43xx_emac.o] Error 1
+arm-none-eabi-gcc -D__MULTICORE_NONE -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M4 -I"/home/pato/Embebidos/TpFinal/Workspaces/test/lpc_chip_43xx/inc" -I"/home/pato/Embebidos/TpFinal/Workspaces/test/lwip_freertos_webserver/example/inc" -I"/home/pato/Embebidos/TpFinal/Workspaces/test/lwip_freertos_webserver/lwip/inc" -I"/home/pato/Embebidos/TpFinal/Workspaces/test/lwip_freertos_webserver/lwip/inc/ipv4" -I"/home/pato/Embebidos/TpFinal/Workspaces/test/lwip_freertos_webserver/fatfs/inc" -I"/home/pato/Embebidos/TpFinal/Workspaces/test/lwip_freertos_webserver/freertos/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -specs=redlib.specs -MMD -MP -MF"lwip/src/netif/etharp.d" -MT"lwip/src/netif/etharp.o" -MT"lwip/src/netif/etharp.d" -o "lwip/src/netif/etharp.o" "../lwip/src/netif/etharp.c"
+In file included from /home/pato/Embebidos/TpFinal/Workspaces/test/lwip_freertos_webserver/freertos/inc/FreeRTOS.h:97:0,
+                 from /home/pato/Embebidos/TpFinal/Workspaces/test/lwip_freertos_webserver/example/inc/lwipopts.h:143,
+                 from /home/pato/Embebidos/TpFinal/Workspaces/test/lwip_freertos_webserver/lwip/inc/lwip/opt.h:45,
+                 from ../lwip/src/netif/etharp.c:46:
+/home/pato/Embebidos/TpFinal/Workspaces/test/lwip_freertos_webserver/example/inc/FreeRTOSConfig.h:59:19: fatal error: board.h: No such file or directory
+ #include "board.h"
+                   ^
+compilation terminated.
+make: *** [lwip/src/netif/etharp.o] Error 1
 
-12:20:14 Build Finished (took 160ms)
+14:46:52 Build Finished (took 110ms)
 

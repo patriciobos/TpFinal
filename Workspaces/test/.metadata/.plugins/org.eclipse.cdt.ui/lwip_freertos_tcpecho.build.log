@@ -1,6 +1,11 @@
-12:46:24 **** Incremental Build of configuration Debug for project lwip_freertos_tcpecho ****
+14:46:51 **** Incremental Build of configuration Debug for project lwip_freertos_tcpecho ****
 make -r all 
-make: No se hace nada para «all».
+Building target: lwip_freertos_tcpecho.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"/home/pato/Embebidos/TpFinal/Workspaces/test/lpc_chip_43xx/Debug" -Xlinker -Map="lwip_freertos_tcpecho.map" -Xlinker --gc-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -T "lwip_freertos_tcpecho_Debug.ld" -o "lwip_freertos_tcpecho.axf"  ./lwip/src/netif/etharp.o ./lwip/src/netif/ethernetif.o  ./lwip/src/core/ipv4/autoip.o ./lwip/src/core/ipv4/icmp.o ./lwip/src/core/ipv4/igmp.o ./lwip/src/core/ipv4/inet.o ./lwip/src/core/ipv4/inet_chksum.o ./lwip/src/core/ipv4/ip.o ./lwip/src/core/ipv4/ip_addr.o ./lwip/src/core/ipv4/ip_frag.o  ./lwip/src/core/def.o ./lwip/src/core/dhcp.o ./lwip/src/core/dns.o ./lwip/src/core/init.o ./lwip/src/core/mem.o ./lwip/src/core/memp.o ./lwip/src/core/netif.o ./lwip/src/core/pbuf.o ./lwip/src/core/raw.o ./lwip/src/core/stats.o ./lwip/src/core/sys.o ./lwip/src/core/tcp.o ./lwip/src/core/tcp_in.o ./lwip/src/core/tcp_out.o ./lwip/src/core/timers.o ./lwip/src/core/udp.o  ./lwip/src/arch/lpc18xx_43xx_emac.o ./lwip/src/arch/lpc_debug.o ./lwip/src/arch/sys_arch_freertos.o  ./lwip/src/api/api_lib.o ./lwip/src/api/api_msg.o ./lwip/src/api/err.o ./lwip/src/api/netbuf.o ./lwip/src/api/netdb.o ./lwip/src/api/netifapi.o ./lwip/src/api/sockets.o ./lwip/src/api/tcpip.o  ./freertos/src/FreeRTOSCommonHooks.o ./freertos/src/croutine.o ./freertos/src/event_groups.o ./freertos/src/heap_4.o ./freertos/src/list.o ./freertos/src/port.o ./freertos/src/queue.o ./freertos/src/tasks.o ./freertos/src/timers.o  ./example/src/cr_startup_lpc43xx.o ./example/src/freertos_tcpecho.o ./example/src/sysinit.o ./example/src/tcpecho.o   -llpc_board_nxp_lpcxpresso_4337 -llpc_chip_43xx
+/usr/local/lpcxpresso_8.0.0_526/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/bin/ld: cannot find -llpc_board_nxp_lpcxpresso_4337
+collect2: error: ld returned 1 exit status
+make: *** [lwip_freertos_tcpecho.axf] Error 1
 
-12:46:24 Build Finished (took 59ms)
+14:46:51 Build Finished (took 108ms)
 
