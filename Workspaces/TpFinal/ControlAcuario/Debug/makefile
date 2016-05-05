@@ -9,6 +9,13 @@ RM := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include src/subdir.mk
+-include lwIP/src/netif/subdir.mk
+-include lwIP/src/core/ipv4/subdir.mk
+-include lwIP/src/core/subdir.mk
+-include lwIP/src/arch/subdir.mk
+-include lwIP/src/api/subdir.mk
+-include freeRTOS/src/subdir.mk
+-include Board/src/subdir.mk
 -include subdir.mk
 -include objects.mk
 

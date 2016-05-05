@@ -34,3 +34,36 @@ Command-line arguments:  -os linux -ws gtk -arch x86 -data file:/home/pato/Embeb
 
 !ENTRY org.eclipse.ui.browser 2 0 2016-05-05 12:56:22.552
 !MESSAGE Internal browser is not available: No more handles [Unknown Mozilla path (MOZILLA_FIVE_HOME not set)]
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-05-05 13:18:28.109
+!MESSAGE Indexed 'ControlAcuario' (4 sources, 68 headers) in 0,628 sec: 4.932 declarations; 7.121 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-05-05 14:11:49.034
+!MESSAGE Indexed 'ControlAcuario' (55 sources, 144 headers) in 2,21 sec: 9.204 declarations; 32.735 references; 1 unresolved inclusions; 3 syntax errors; 45 unresolved names (0,11 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-05-05 14:15:36.110
+!MESSAGE Indexed 'ControlAcuario' (54 sources, 144 headers) in 2,53 sec: 9.174 declarations; 32.473 references; 1 unresolved inclusions; 3 syntax errors; 46 unresolved names (0,11 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-05-05 14:26:44.728
+!MESSAGE Indexed 'ControlAcuario' (54 sources, 145 headers) in 2,27 sec: 9.185 declarations; 32.585 references; 1 unresolved inclusions; 0 syntax errors; 24 unresolved names (0,057 %)
+!SESSION 2016-05-05 14:36:08.999 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=es_AR
+Command-line arguments:  -os linux -ws gtk -arch x86 -data /home/pato/Embebidos/TpFinal/Workspaces/TpFinal
+
+!ENTRY org.eclipse.ui 4 4 2016-05-05 14:36:13.175
+!MESSAGE Plugin org.eclipse.cdt.ui, extension org.eclipse.ui.decorators, id org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator: Duplicate id found: org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator
+
+!ENTRY org.eclipse.ui 4 4 2016-05-05 14:36:13.178
+!MESSAGE Plugin org.eclipse.cdt.ui, extension org.eclipse.ui.decorators, id org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator: Unknown extension tag found: decorator
+
+!ENTRY ilg.gnuarmeclipse.packs.data 4 1 2016-05-05 14:43:06.451
+!MESSAGE File .repos.xml does not exist, using defaults.
+
+!ENTRY org.eclipse.ui.browser 2 0 2016-05-05 14:44:35.808
+!MESSAGE Internal browser is not available: No more handles [Unknown Mozilla path (MOZILLA_FIVE_HOME not set)]
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-05-05 14:51:01.491
+!MESSAGE Indexed 'ControlAcuario' (54 sources, 145 headers) in 2,34 sec: 9.180 declarations; 32.580 references; 0 unresolved inclusions; 0 syntax errors; 23 unresolved names (0,055 %)

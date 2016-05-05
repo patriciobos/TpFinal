@@ -2707,3 +2707,18 @@ Command-line arguments:  -os linux -ws gtk -arch x86
 
 !ENTRY org.eclipse.cdt.core 1 0 2016-05-01 19:17:55.670
 !MESSAGE Indexed 'lwip_freertos_tcpecho' (51 sources, 142 headers) in 1,33 sec: 9.073 declarations; 31.825 references; 0 unresolved inclusions; 0 syntax errors; 25 unresolved names (0,061 %)
+!SESSION 2016-05-05 14:34:05.793 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=es_AR
+Command-line arguments:  -os linux -ws gtk -arch x86 -data /home/pato/Embebidos/TpFinal/Workspaces/Workspace LPCOPEN
+
+!ENTRY org.eclipse.ui 4 4 2016-05-05 14:34:12.141
+!MESSAGE Plugin org.eclipse.cdt.ui, extension org.eclipse.ui.decorators, id org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator: Duplicate id found: org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator
+
+!ENTRY org.eclipse.ui 4 4 2016-05-05 14:34:12.182
+!MESSAGE Plugin org.eclipse.cdt.ui, extension org.eclipse.ui.decorators, id org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator: Unknown extension tag found: decorator
+
+!ENTRY org.eclipse.ui.browser 2 0 2016-05-05 14:34:12.540
+!MESSAGE Internal browser is not available: No more handles [Unknown Mozilla path (MOZILLA_FIVE_HOME not set)]

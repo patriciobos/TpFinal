@@ -1,4 +1,5 @@
 src/ControlAcuario.o src/ControlAcuario.d: ../src/ControlAcuario.c \
+ /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/Board/inc/board.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/lpc_chip_43xx/inc/chip.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/lpc_chip_43xx/inc/sys_config.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/lpc_chip_43xx/inc/cmsis.h \
@@ -59,7 +60,12 @@ src/ControlAcuario.o src/ControlAcuario.d: ../src/ControlAcuario.c \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/lpc_chip_43xx/inc/iap_18xx_43xx.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/lpc_chip_43xx/inc/error.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/lpc_chip_43xx/inc/i2cm_18xx_43xx.h \
- /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/lpc_chip_43xx/inc/fpu_init.h
+ /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/lpc_chip_43xx/inc/fpu_init.h \
+ /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/Board/inc/board_api.h \
+ /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/lpc_chip_43xx/inc/lpc_types.h \
+ /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/arch/lpc_phy.h
+
+/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/Board/inc/board.h:
 
 /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/lpc_chip_43xx/inc/chip.h:
 
@@ -182,3 +188,9 @@ src/ControlAcuario.o src/ControlAcuario.d: ../src/ControlAcuario.c \
 /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/lpc_chip_43xx/inc/i2cm_18xx_43xx.h:
 
 /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/lpc_chip_43xx/inc/fpu_init.h:
+
+/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/Board/inc/board_api.h:
+
+/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/lpc_chip_43xx/inc/lpc_types.h:
+
+/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/arch/lpc_phy.h:

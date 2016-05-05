@@ -14,5 +14,12 @@ C_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
+Board/src \
+freeRTOS/src \
+lwIP/src/api \
+lwIP/src/arch \
+lwIP/src/core \
+lwIP/src/core/ipv4 \
+lwIP/src/netif \
 src \
 
