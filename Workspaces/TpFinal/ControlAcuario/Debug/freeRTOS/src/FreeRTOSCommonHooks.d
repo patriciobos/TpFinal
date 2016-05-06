@@ -2,7 +2,7 @@ freeRTOS/src/FreeRTOSCommonHooks.o freeRTOS/src/FreeRTOSCommonHooks.d: \
  ../freeRTOS/src/FreeRTOSCommonHooks.c \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/freeRTOS/inc/FreeRTOS.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/freeRTOS/inc/projdefs.h \
- /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/inc/FreeRTOSConfig.h \
+ /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/freeRTOS/inc/../../Control/inc/FreeRTOSConfig.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/Board/inc/board.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/lpc_chip_43xx/inc/chip.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/lpc_chip_43xx/inc/sys_config.h \
@@ -79,7 +79,7 @@ freeRTOS/src/FreeRTOSCommonHooks.o freeRTOS/src/FreeRTOSCommonHooks.d: \
 
 /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/freeRTOS/inc/projdefs.h:
 
-/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/inc/FreeRTOSConfig.h:
+/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/freeRTOS/inc/../../Control/inc/FreeRTOSConfig.h:
 
 /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/Board/inc/board.h:
 

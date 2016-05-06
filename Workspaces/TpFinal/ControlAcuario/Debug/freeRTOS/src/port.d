@@ -1,7 +1,7 @@
 freeRTOS/src/port.o freeRTOS/src/port.d: ../freeRTOS/src/port.c \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/freeRTOS/inc/FreeRTOS.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/freeRTOS/inc/projdefs.h \
- /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/inc/FreeRTOSConfig.h \
+ /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/freeRTOS/inc/../../Control/inc/FreeRTOSConfig.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/Board/inc/board.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/lpc_chip_43xx/inc/chip.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/lpc_chip_43xx/inc/sys_config.h \
@@ -77,7 +77,7 @@ freeRTOS/src/port.o freeRTOS/src/port.d: ../freeRTOS/src/port.c \
 
 /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/freeRTOS/inc/projdefs.h:
 
-/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/inc/FreeRTOSConfig.h:
+/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/freeRTOS/inc/../../Control/inc/FreeRTOSConfig.h:
 
 /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/Board/inc/board.h:
 

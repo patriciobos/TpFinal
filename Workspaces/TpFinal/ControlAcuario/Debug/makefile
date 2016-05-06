@@ -8,13 +8,13 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
--include src/subdir.mk
 -include lwIP/src/netif/subdir.mk
 -include lwIP/src/core/ipv4/subdir.mk
 -include lwIP/src/core/subdir.mk
 -include lwIP/src/arch/subdir.mk
 -include lwIP/src/api/subdir.mk
 -include freeRTOS/src/subdir.mk
+-include Control/src/subdir.mk
 -include Board/src/subdir.mk
 -include subdir.mk
 -include objects.mk
@@ -36,7 +36,7 @@ all: ControlAcuario.axf
 ControlAcuario.axf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU Linker'
-	arm-none-eabi-gcc -nostdlib -L"/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/lpc_chip_43xx/Debug" -Xlinker -Map="ControlAcuario.map" -Xlinker --gc-sections -mcpu=cortex-m4 -mthumb -T "ControlAcuario_Debug.ld" -o "ControlAcuario.axf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -nostdlib -L"/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/lpc_chip_43xx/Debug" -Xlinker -Map="ControlAcuario.map" -Xlinker --gc-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -T "ControlAcuario_Debug.ld" -o "ControlAcuario.axf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build

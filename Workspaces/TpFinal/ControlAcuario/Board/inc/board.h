@@ -56,7 +56,7 @@ extern "C" {
     DEBUGIN macros. If not defined, DEBUG* functions will be optimized
 	out of the code at build time.
  */
-//#define DEBUG_ENABLE
+#define DEBUG_ENABLE
 
 /** Define DEBUG_SEMIHOSTING along with DEBUG_ENABLE to enable IO support
     via semihosting. You may need to use a C library that supports
@@ -75,10 +75,11 @@ extern "C" {
 
 /* Board name */
 #define BOARD_NGX_XPLORER_4330
+#define ciaa_nxp
 
 /* Build for RMII interface */
 #define USE_RMII
-#define BOARD_ENET_PHY_ADDR	0x00
+#define BOARD_ENET_PHY_ADDR	0x01
 
 /* For USBLIB examples */
 #define LEDS_LED1           0x01

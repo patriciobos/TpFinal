@@ -39,13 +39,13 @@
 #include "netif/etharp.h"
 #include "netif/ppp_oe.h"
 
-#include "lpc_18xx43xx_emac_config.h"
 #include "arch/lpc18xx_43xx_emac.h"
 
 #include "chip.h"
 #include "arch/lpc_phy.h"
 
 #include <string.h>
+#include "../../../Control/inc/lpc_18xx43xx_emac_config.h"
 
 extern void msDelay(uint32_t ms);
 

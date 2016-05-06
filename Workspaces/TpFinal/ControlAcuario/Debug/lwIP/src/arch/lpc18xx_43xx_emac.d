@@ -1,10 +1,13 @@
 lwIP/src/arch/lpc18xx_43xx_emac.o lwIP/src/arch/lpc18xx_43xx_emac.d: \
  ../lwIP/src/arch/lpc18xx_43xx_emac.c \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/lwip/opt.h \
- /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/inc/lwipopts.h \
+ /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/lwip/debug.h \
+ /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/lwip/arch.h \
+ /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/arch/cc.h \
+ /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/lwip/../../../Control/inc/lwipopts.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/freeRTOS/inc/FreeRTOS.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/freeRTOS/inc/projdefs.h \
- /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/inc/FreeRTOSConfig.h \
+ /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/freeRTOS/inc/../../Control/inc/FreeRTOSConfig.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/Board/inc/board.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/lpc_chip_43xx/inc/chip.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/lpc_chip_43xx/inc/sys_config.h \
@@ -73,9 +76,6 @@ lwIP/src/arch/lpc18xx_43xx_emac.o lwIP/src/arch/lpc18xx_43xx_emac.d: \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/freeRTOS/inc/portable.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/freeRTOS/inc/portmacro.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/freeRTOS/inc/mpu_wrappers.h \
- /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/lwip/debug.h \
- /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/lwip/arch.h \
- /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/arch/cc.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/lwip/sys.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/lwip/err.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/arch/sys_arch.h \
@@ -97,19 +97,25 @@ lwIP/src/arch/lpc18xx_43xx_emac.o lwIP/src/arch/lpc18xx_43xx_emac.d: \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/lwip/netif.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/ipv4/lwip/ip.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/netif/ppp_oe.h \
- /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/inc/lpc_18xx43xx_emac_config.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/arch/lpc18xx_43xx_emac.h \
- /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/arch/lpc_phy.h
+ /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/arch/lpc_phy.h \
+ ../lwIP/src/arch/../../../Control/inc/lpc_18xx43xx_emac_config.h
 
 /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/lwip/opt.h:
 
-/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/inc/lwipopts.h:
+/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/lwip/debug.h:
+
+/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/lwip/arch.h:
+
+/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/arch/cc.h:
+
+/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/lwip/../../../Control/inc/lwipopts.h:
 
 /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/freeRTOS/inc/FreeRTOS.h:
 
 /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/freeRTOS/inc/projdefs.h:
 
-/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/inc/FreeRTOSConfig.h:
+/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/freeRTOS/inc/../../Control/inc/FreeRTOSConfig.h:
 
 /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/Board/inc/board.h:
 
@@ -247,12 +253,6 @@ lwIP/src/arch/lpc18xx_43xx_emac.o lwIP/src/arch/lpc18xx_43xx_emac.d: \
 
 /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/freeRTOS/inc/mpu_wrappers.h:
 
-/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/lwip/debug.h:
-
-/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/lwip/arch.h:
-
-/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/arch/cc.h:
-
 /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/lwip/sys.h:
 
 /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/lwip/err.h:
@@ -295,8 +295,8 @@ lwIP/src/arch/lpc18xx_43xx_emac.o lwIP/src/arch/lpc18xx_43xx_emac.d: \
 
 /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/netif/ppp_oe.h:
 
-/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/inc/lpc_18xx43xx_emac_config.h:
-
 /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/arch/lpc18xx_43xx_emac.h:
 
 /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/arch/lpc_phy.h:
+
+../lwIP/src/arch/../../../Control/inc/lpc_18xx43xx_emac_config.h:

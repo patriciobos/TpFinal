@@ -1,7 +1,7 @@
 freeRTOS/src/timers.o freeRTOS/src/timers.d: ../freeRTOS/src/timers.c \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/freeRTOS/inc/FreeRTOS.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/freeRTOS/inc/projdefs.h \
- /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/inc/FreeRTOSConfig.h \
+ /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/freeRTOS/inc/../../Control/inc/FreeRTOSConfig.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/Board/inc/board.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/lpc_chip_43xx/inc/chip.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/lpc_chip_43xx/inc/sys_config.h \
@@ -75,10 +75,10 @@ freeRTOS/src/timers.o freeRTOS/src/timers.d: ../freeRTOS/src/timers.c \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/freeRTOS/inc/queue.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/lwip/timers.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/lwip/opt.h \
- /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/inc/lwipopts.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/lwip/debug.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/lwip/arch.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/arch/cc.h \
+ /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/lwip/../../../Control/inc/lwipopts.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/lwip/err.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/lwip/sys.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/arch/sys_arch.h \
@@ -89,7 +89,7 @@ freeRTOS/src/timers.o freeRTOS/src/timers.d: ../freeRTOS/src/timers.c \
 
 /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/freeRTOS/inc/projdefs.h:
 
-/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/inc/FreeRTOSConfig.h:
+/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/freeRTOS/inc/../../Control/inc/FreeRTOSConfig.h:
 
 /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/Board/inc/board.h:
 
@@ -237,13 +237,13 @@ freeRTOS/src/timers.o freeRTOS/src/timers.d: ../freeRTOS/src/timers.c \
 
 /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/lwip/opt.h:
 
-/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/inc/lwipopts.h:
-
 /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/lwip/debug.h:
 
 /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/lwip/arch.h:
 
 /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/arch/cc.h:
+
+/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/lwip/../../../Control/inc/lwipopts.h:
 
 /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/lwip/err.h:
 

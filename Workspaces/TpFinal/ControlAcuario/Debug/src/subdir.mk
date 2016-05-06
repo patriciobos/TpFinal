@@ -7,19 +7,22 @@ C_SRCS += \
 ../src/ControlAcuario.c \
 ../src/cr_startup_lpc43xx.c \
 ../src/crp.c \
-../src/sysinit.c 
+../src/sysinit.c \
+../src/tcpecho.c 
 
 OBJS += \
 ./src/ControlAcuario.o \
 ./src/cr_startup_lpc43xx.o \
 ./src/crp.o \
-./src/sysinit.o 
+./src/sysinit.o \
+./src/tcpecho.o 
 
 C_DEPS += \
 ./src/ControlAcuario.d \
 ./src/cr_startup_lpc43xx.d \
 ./src/crp.d \
-./src/sysinit.d 
+./src/sysinit.d \
+./src/tcpecho.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
