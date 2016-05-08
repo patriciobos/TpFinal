@@ -36,8 +36,8 @@
 									<listOptionValue builtIn="false" value="__LPC43XX"/>
 									<listOptionValue builtIn="false" value="__CODE_RED"/>
 									<listOptionValue builtIn="false" value="LPC43_MULTICORE_M0APP"/>
-									<listOptionValue builtIn="false" value="__MULTICORE_MASTER"/>
-									<listOptionValue builtIn="false" value="__MULTICORE_MASTER_SLAVE_M0APP"/>
+									<listOptionValue builtIn="false" value="__MULTICORE_NONE"/>
+									<listOptionValue builtIn="false" value="__REDLIB__"/>
 								</option>
 								<option id="gnu.c.compiler.option.misc.other.473456141" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections" valueType="string"/>
 								<option id="gnu.c.compiler.option.include.paths.187817211" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
@@ -55,6 +55,9 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Acuario/lwIP/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Acuario/freeRTOS/inc}&quot;"/>
 								</option>
+								<option id="com.crt.advproject.gcc.fpu.2106007301" name="Floating point" superClass="com.crt.advproject.gcc.fpu" value="com.crt.advproject.gcc.fpu.fpv4" valueType="enumerated"/>
+								<option id="com.crt.advproject.gcc.hdrlib.14534326" superClass="com.crt.advproject.gcc.hdrlib" value="com.crt.advproject.gcc.hdrlib.codered" valueType="enumerated"/>
+								<option id="com.crt.advproject.gcc.specs.992572972" superClass="com.crt.advproject.gcc.specs" value="com.crt.advproject.gcc.specs.codered" valueType="enumerated"/>
 								<inputType id="com.crt.advproject.compiler.input.800587132" superClass="com.crt.advproject.compiler.input"/>
 							</tool>
 							<tool id="com.crt.advproject.gas.exe.debug.1548582763" name="MCU Assembler" superClass="com.crt.advproject.gas.exe.debug">
@@ -77,8 +80,9 @@
 									<listOptionValue builtIn="false" value="-Map=&quot;${BuildArtifactFileBaseName}.map&quot;"/>
 									<listOptionValue builtIn="false" value="--gc-sections"/>
 								</option>
-								<option id="com.crt.advproject.link.gcc.hdrlib.962546087" name="Library" superClass="com.crt.advproject.link.gcc.hdrlib"/>
+								<option id="com.crt.advproject.link.gcc.hdrlib.962546087" name="Library" superClass="com.crt.advproject.link.gcc.hdrlib" value="com.crt.advproject.gcc.link.hdrlib.codered.semihost" valueType="enumerated"/>
 								<option id="com.crt.advproject.link.gcc.multicore.slave.1504764616" name="Multicore configuration" superClass="com.crt.advproject.link.gcc.multicore.slave"/>
+								<option id="com.crt.advproject.link.fpu.1399603209" name="Floating point" superClass="com.crt.advproject.link.fpu" value="com.crt.advproject.link.fpu.fpv4" valueType="enumerated"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1822329341" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -88,9 +92,9 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry excluding="HAL|Board|freeRTOS|lwIP|Control" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Control"/>
+						<entry excluding="src/newlib_stubs.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Control"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="HAL"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="freeRTOS"/>
+						<entry excluding="src/redlib_memfix.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="freeRTOS"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="lwIP"/>
 					</sourceEntries>
 				</configuration>
@@ -160,9 +164,9 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry excluding="HAL|Board|lwIP|freeRTOS|Control" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Control"/>
+						<entry excluding="src/newlib_stubs.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Control"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="HAL"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="freeRTOS"/>
+						<entry excluding="src/redlib_memfix.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="freeRTOS"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="lwIP"/>
 					</sourceEntries>
 				</configuration>
@@ -260,7 +264,14 @@
 &lt;/infoList&gt;
 &lt;/TargetConfig&gt;</projectStorage>
 	</storageModule>
-	<storageModule moduleId="refreshScope"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/Acuario"/>
+		</configuration>
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/Acuario"/>
+		</configuration>
+	</storageModule>
 	<storageModule moduleId="scannerConfiguration">
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		<scannerConfigBuildInfo instanceId="com.crt.advproject.config.exe.debug.2033279648;com.crt.advproject.config.exe.debug.2033279648.;com.crt.advproject.gcc.exe.debug.1298080546;com.crt.advproject.compiler.input.800587132">

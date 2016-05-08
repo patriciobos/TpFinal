@@ -75,6 +75,7 @@ extern "C" {
 
 /* Board name */
 #define BOARD_NGX_XPLORER_4330
+#define ciaa_nxp
 
 /* Build for RMII interface */
 #define USE_RMII

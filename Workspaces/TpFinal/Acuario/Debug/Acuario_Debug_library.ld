@@ -5,10 +5,11 @@
  * Generated linker script file for LPC4337
  * Created from library.ldt by FMCreateLinkLibraries
  * Using Freemarker v2.3.23
- * LPCXpresso v8.0.0 [Build 526] [2015-11-23]  on 06/05/2016 16:50:05
+ * LPCXpresso v8.1.4 [Build 606] [2016-03-14]  on 08/05/2016 12:01:36
  */
 
 GROUP (
+  libcr_semihost.a
   libcr_c.a
   libcr_eabihelpers.a
 )

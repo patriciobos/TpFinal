@@ -33,15 +33,15 @@
 
 #include "ciaaIO.h"
 
-#ifdef edu_ciaa_nxp
-ciaaPin_t inputs[4] = { {0,4},{0,8},{0,9},{1,9} };
-ciaaPin_t outputs[6] = { {5,0},{5,1},{5,2},{0,14},{1,11},{1,12} };
-#elif defined(ciaa_nxp)
+//#ifdef edu_ciaa_nxp
+//ciaaPin_t inputs[4] = { {0,4},{0,8},{0,9},{1,9} };
+//ciaaPin_t outputs[6] = { {5,0},{5,1},{5,2},{0,14},{1,11},{1,12} };
+//#elif defined(ciaa_nxp)
 ciaaPin_t inputs[8] = { {2,0},{2,1},{2,2},{2,3},{3,11},{3,12},{3,13},{3,14} };
 ciaaPin_t outputs[8] = { {5,1},{2,6},{2,5},{2,4},{5,12},{5,13},{5,14},{1,8} };
-#else
-#error "please define CIAA_NXP or EDU_CIAA_NXP"
-#endif
+//#else
+//#error "please define CIAA_NXP or EDU_CIAA_NXP"
+//#endif
 
 void ciaaIOInit(void)
 {
