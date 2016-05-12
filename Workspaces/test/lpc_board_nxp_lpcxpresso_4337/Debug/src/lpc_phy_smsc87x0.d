@@ -63,7 +63,8 @@ src/lpc_phy_smsc87x0.o src/lpc_phy_smsc87x0.d: ../src/lpc_phy_smsc87x0.c \
  /home/pato/Embebidos/TpFinal/Workspaces/test/lpc_board_nxp_lpcxpresso_4337/inc/lpc_phy.h \
  /home/pato/Embebidos/TpFinal/Workspaces/test/lpc_board_nxp_lpcxpresso_4337/inc/board.h \
  /home/pato/Embebidos/TpFinal/Workspaces/test/lpc_board_nxp_lpcxpresso_4337/inc/board_api.h \
- /home/pato/Embebidos/TpFinal/Workspaces/test/lpc_chip_43xx/inc/lpc_types.h
+ /home/pato/Embebidos/TpFinal/Workspaces/test/lpc_chip_43xx/inc/lpc_types.h \
+ /home/pato/Embebidos/TpFinal/Workspaces/test/lpc_board_nxp_lpcxpresso_4337/inc/lpc_phy.h
 
 /home/pato/Embebidos/TpFinal/Workspaces/test/lpc_chip_43xx/inc/chip.h:
 
@@ -194,3 +195,5 @@ src/lpc_phy_smsc87x0.o src/lpc_phy_smsc87x0.d: ../src/lpc_phy_smsc87x0.c \
 /home/pato/Embebidos/TpFinal/Workspaces/test/lpc_board_nxp_lpcxpresso_4337/inc/board_api.h:
 
 /home/pato/Embebidos/TpFinal/Workspaces/test/lpc_chip_43xx/inc/lpc_types.h:
+
+/home/pato/Embebidos/TpFinal/Workspaces/test/lpc_board_nxp_lpcxpresso_4337/inc/lpc_phy.h:

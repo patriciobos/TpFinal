@@ -12,6 +12,7 @@
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="#define CRP_NO_CRP"/>
 			<item value="descriptors "/>
 			<item value="NUM_NETWORK_BUFFER_DESCRIPTORS "/>
 			<item value="ipconfigNUM_NETWORK_BUFFER_DESCRIPTORS "/>
@@ -19,7 +20,6 @@
 			<item value="mem"/>
 			<item value="Heap"/>
 			<item value="lpc_netifdata-&gt;txpbufs[idx]"/>
-			<item value="lpc_low_level_output"/>
 		</list>
 		<list key="replacehistory">
 		</list>

@@ -40,6 +40,7 @@
 #include <string.h>
 
 /* lwIP include files */
+#include "lwip/init.h"
 #include "lwip/opt.h"
 #include "lwip/sys.h"
 #include "lwip/memp.h"
@@ -47,16 +48,21 @@
 #include "lwip/ip_addr.h"
 #include "lwip/netif.h"
 #include "lwip/timers.h"
-
 #include "netif/etharp.h"
 
 #if LWIP_DHCP
 #include "lwip/dhcp.h"
 #endif
 
+#include "board.h"
 #include "arch/lpc18xx_43xx_emac.h"
 #include "arch/lpc_arch.h"
+#include "arch/sys_arch.h"
 #include "lpc_phy.h"/* For the PHY monitor support */
+
+#if defined(lpc4337_m4)
+#include "ciaaIO.h"
+#endif
 
 extern void http_server_netconn_init(void);
 
@@ -71,8 +77,27 @@ extern void http_server_netconn_init(void);
 static struct netif lpc_netif;
 
 /*****************************************************************************
+ * Public types/enumerations/variables
+ ****************************************************************************/
+
+/*****************************************************************************
  * Private functions
  ****************************************************************************/
+
+/* Sets up system hardware */
+static void prvSetupHardware(void)
+{
+	SystemCoreClockUpdate();
+	Board_Init();
+
+#if defined(lpc4337_m4)
+	ciaaIOInit();
+#endif
+
+	/* LED0 is used for the link status, on = PHY cable detected */
+	/* Initial LED state is off to show an unconnected cable state */
+	Board_LED_Set(0, false);
+}
 
 static void ip_addr_changed(const struct netif *nwif)
 {
@@ -85,22 +110,15 @@ static void ip_addr_changed(const struct netif *nwif)
 	DEBUGOUT("GATEWAY_IP : %s\r\n", ipaddr_ntoa_r((const ip_addr_t *) &nwif->gw, tmp_buff, 16));
 }
 
-/**
- * Callback function for TCPIP thread to indicate TCPIP init is done
- * (Only used in case of FreeRTOS/uCOS-III configuration)
- */
+/* Callback for TCPIP thread to indicate TCPIP init is done */
 static void tcpip_init_done_signal(void *arg)
 {
 	/* Tell main thread TCP/IP init is done */
 	*(s32_t *) arg = 1;
 }
 
-/**
- * Network interface setup function
- * (Only used in case of FreeRTOS/uCOS-III configuration)
- */
-static void vSetupIFTask(void *pvParameters)
-{
+/* LWIP kickoff and PHY link monitor thread */
+static void vSetupIFTask (void *pvParameters) {
 	ip_addr_t ipaddr, netmask, gw;
 	volatile s32_t tcpipdone = 0;
 	uint32_t physts;
@@ -108,11 +126,13 @@ static void vSetupIFTask(void *pvParameters)
 
 	/* Wait until the TCP/IP thread is finished before
 	   continuing or wierd things may happen */
-	DEBUGSTR("Waiting for TCPIP thread to initialize...\r\n");
+	LWIP_DEBUGF(LWIP_DBG_ON, ("Waiting for TCPIP thread to initialize...\n"));
 	tcpip_init(tcpip_init_done_signal, (void *) &tcpipdone);
-	while (!tcpipdone) ;
+	while (!tcpipdone) {
+		msDelay(1);
+	}
 
-	DEBUGSTR("Starting LWIP HTTP server...\r\n");
+	LWIP_DEBUGF(LWIP_DBG_ON, ("Starting LWIP TCP echo server...\n"));
 
 	/* Static IP assignment */
 #if LWIP_DHCP
@@ -121,7 +141,7 @@ static void vSetupIFTask(void *pvParameters)
 	IP4_ADDR(&netmask, 0, 0, 0, 0);
 #else
 	IP4_ADDR(&gw, 192, 168, 200, 1);
-	IP4_ADDR(&ipaddr, 192, 168, 200, 91);
+	IP4_ADDR(&ipaddr,  192, 168, 200, 99);
 	IP4_ADDR(&netmask, 255, 255, 255, 0);
 #endif
 
@@ -129,10 +149,9 @@ static void vSetupIFTask(void *pvParameters)
 	memset(&lpc_netif, 0, sizeof(lpc_netif));
 	if (!netif_add(&lpc_netif, &ipaddr, &netmask, &gw, NULL, lpc_enetif_init,
 				   tcpip_input)) {
-		DEBUGSTR("Net interface failed to initialize ..\r\n");
+		LWIP_ASSERT("Net interface failed to initialize\r\n", 0);
 		while (1) ;
 	}
-
 	netif_set_default(&lpc_netif);
 	netif_set_up(&lpc_netif);
 
@@ -157,6 +176,9 @@ static void vSetupIFTask(void *pvParameters)
 		/* Only check for connection state when the PHY status has changed */
 		if (physts & PHY_LINK_CHANGED) {
 			if (physts & PHY_LINK_CONNECTED) {
+				Board_LED_Set(0, true);
+				prt_ip = 0;
+
 				/* Set interface speed and duplex */
 				if (physts & PHY_LINK_SPEED100) {
 					NETIF_INIT_SNMP(&lpc_netif, snmp_ifType_ethernet_csmacd, 100000000);
@@ -175,15 +197,16 @@ static void vSetupIFTask(void *pvParameters)
 										  (void *) &lpc_netif, 1);
 			}
 			else {
+				Board_LED_Set(0, false);
 				tcpip_callback_with_block((tcpip_callback_fn) netif_set_link_down,
 										  (void *) &lpc_netif, 1);
 			}
+
+			DEBUGOUT("Link connect status: %d\r\n", ((physts & PHY_LINK_CONNECTED) != 0));
+
+			/* Delay for link detection (250mS) */
+			vTaskDelay(configTICK_RATE_HZ / 4);
 		}
-
-		// DEBUGOUT("Link connect status: %d\n", ((physts & PHY_LINK_CONNECTED) != 0));
-
-		/* Delay for link detection */
-		msDelay(250);
 
 		if (!prt_ip && lpc_netif.ip_addr.addr) {
 			prt_ip = 1;
@@ -192,35 +215,19 @@ static void vSetupIFTask(void *pvParameters)
 	}
 }
 
-
 /*****************************************************************************
  * Public functions
  ****************************************************************************/
 
-extern void lcd_update_hostip(uint32_t host_ip);
-
 /**
- * @brief	Delay function
- * @param ms	:   Delay value in milliseconds
- * @return None
- * The function provides the delay (Only used in FreeRTOS configuration)
+ * @brief	MilliSecond delay function based on FreeRTOS
+ * @param	ms	: Number of milliSeconds to delay
+ * @return	Nothing
+ * Needed for some functions, do not use prior to FreeRTOS running
  */
-/*********************************************************************//**
- * @brief  MilliSecond delay function based on FreeRTOS
- * @param[in] ms Number of milliSeconds to delay
- * @note		Needed for some functions, do not use prior to FreeRTOS running
- * @return Nothing
- **********************************************************************/
 void msDelay(uint32_t ms)
 {
 	vTaskDelay((configTICK_RATE_HZ * ms) / 1000);
-}
-
-
-/* lwIP initialization function */
-void LWIP_Init(void)
-{
-	return;
 }
 
 /**
@@ -233,17 +240,21 @@ void LWIP_Init(void)
  */
 int main(void)
 {
-	/* Update system clock and initialize board */
-	SystemCoreClockUpdate();
-	Board_Init();
-	LWIP_Init();
+	prvSetupHardware();
 
-	xTaskCreate(vSetupIFTask, "SetupIFx",
-				256, NULL, (tskIDLE_PRIORITY + 1UL),
-				(TaskHandle_t *) NULL);
+	/* Add another thread for initializing physical interface. This
+	   is delayed from the main LWIP initialization. */
+	xTaskCreate(vSetupIFTask, (signed char *) "SetupIFx",
+				configMINIMAL_STACK_SIZE, NULL, (tskIDLE_PRIORITY + 1UL),
+				(xTaskHandle *) NULL);
 
 	/* Start the scheduler */
 	vTaskStartScheduler();
-	return 0;
+
+	/* Should never arrive here */
+	return 1;
 }
 
+/**
+ * @}
+ */

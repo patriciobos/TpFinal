@@ -1,0 +1,23 @@
+!SESSION 2016-05-10 10:44:18.785 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=es_AR
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.ui 4 4 2016-05-10 10:44:46.105
+!MESSAGE Plugin org.eclipse.cdt.ui, extension org.eclipse.ui.decorators, id org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator: Duplicate id found: org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator
+
+!ENTRY org.eclipse.ui 4 4 2016-05-10 10:44:46.108
+!MESSAGE Plugin org.eclipse.cdt.ui, extension org.eclipse.ui.decorators, id org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator: Unknown extension tag found: decorator
+
+!ENTRY org.eclipse.ui.browser 2 0 2016-05-10 10:44:46.587
+!MESSAGE Internal browser is not available: No more handles [Unknown Mozilla path (MOZILLA_FIVE_HOME not set)]
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-05-10 10:45:59.621
+!MESSAGE Indexed 'Workspace' (370 sources, 776 headers) in 10,9 sec: 56.375 declarations; 110.863 references; 177 unresolved inclusions; 4.466 syntax errors; 22.009 unresolved names (12 %)
+
+!ENTRY ilg.gnuarmeclipse.debug.gdbjtag 4 0 2016-05-10 11:48:30.609
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.

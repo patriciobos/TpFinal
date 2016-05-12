@@ -56,7 +56,7 @@ extern "C" {
     DEBUGIN macros. If not defined, DEBUG* functions will be optimized
 	out of the code at build time.
  */
-#define DEBUG_ENABLE
+//#define DEBUG_ENABLE
 
 /** Define DEBUG_SEMIHOSTING along with DEBUG_ENABLE to enable IO support
     via semihosting. You may need to use a C library that supports
@@ -67,67 +67,18 @@ extern "C" {
 /** Board UART used for debug output and input using the DEBUG* macros. This
     is also the port used for Board_UARTPutChar, Board_UARTGetChar, and
 	Board_UARTPutSTR functions. */
-//#define DEBUG_UART LPC_USART0 /* pato */
-#define DEBUG_UART LPC_USART2
+#define DEBUG_UART LPC_USART0
+
 /**
  * @}
  */
 
 /* Board name */
-#define BOARD_NXP_LPCXPRESSO_4337	/* pato */
-//#define BOARD_CIAA_NXP
-
-
-//	RELAYs
-/*		LED0 => P4_4 on GPIO 2[4]	*
- *		LED1 => P4_5 on GPIO 2[5]	*
- *		LED2 => P4_6 on GPIO 2[6]	*
- *		LED3 => P2_1 on GPIO 5[1]	*/
-
-
-//	MOSFETs
-/* 		LED5 => P4_8  on GPIO5[12] */
-/* 		LED4 => P4_9  on GPIO5[13] */
-/* 		LED7 => P4_10 on GPIO5[14] */
-/* 		LED6 => P1_5  on GPIO1[8] */
-
-// LEDs
-#define LED0	0
-#define LED1	1
-#define LED2	2
-#define LED3	3
-#define LED4	4
-#define LED5	5
-#define LED6	6
-#define LED7	7
-
-#define led_t	uint8_t
-static const led_t led[] = {LED0, LED1, LED2, LED3};
-//static const led_t led[] = {LED4, LED5, LED6, LED7};
-
-
-
-
-
+#define BOARD_NGX_XPLORER_4330
 
 /* Build for RMII interface */
 #define USE_RMII
 #define BOARD_ENET_PHY_ADDR	0x01
-
-/* LCD interface defines */
-#define LCD_SSP              LPC_SSP1
-#define LCD_CDM_PORT         6
-#define LCD_CMD_PIN          5
-#define LCD_CMD_CFG          (SCU_MODE_INBUFF_EN | SCU_MODE_PULLUP | SCU_MODE_FUNC0)
-#define LCD_CMD_GPIO_PORT    3
-#define LCD_CMD_GPIO_PIN     4
-#define LCD_BIT_RATE         1000000 /* 1 MHz */
-
-/* Audio Codec defines */
-#define I2CDEV_WM8904_ADDR     (0x34 >> 1)
-#define WM8904_I2C_BUS         I2C1
-#define CODEC_LINE_IN          0 /* Mic */
-#define AUDCFG_SAMPLE_RATE     16000
 
 /* For USBLIB examples */
 #define LEDS_LED1           0x01
@@ -147,18 +98,11 @@ static const led_t led[] = {LED0, LED1, LED2, LED3};
 // #define CFG_SDCARD
 
 #define BUTTONS_BUTTON1_GPIO_PORT_NUM   0
-#define BUTTONS_BUTTON1_GPIO_BIT_NUM    7
+#define BUTTONS_BUTTON1_GPIO_BIT_NUM    4
 #define LED1_GPIO_PORT_NUM              1
 #define LED1_GPIO_BIT_NUM               11
 #define LED2_GPIO_PORT_NUM              1
 #define LED2_GPIO_BIT_NUM               12
-
-/* USB1 VBUS Enable GPIO pins */
-#define USB1_VBUS_PORT_NUM          2
-#define USB1_VBUS_PIN_NUM           5
-#define USB1_VBUS_PIN_CFG           (SCU_MODE_PULLUP | SCU_MODE_INBUFF_EN | SCU_MODE_ZIF_DIS | SCU_MODE_FUNC4)
-#define USB1_VBUS_GPIO_PORT_NUM     5
-#define USB1_VBUS_GPIO_BIT_NUM      5
 
 /**
  * @brief	Sets up board specific I2C interface
@@ -193,35 +137,6 @@ STATIC INLINE void Board_I2C_DisableFastPlus(I2C_ID_T id)
 }
 
 /**
- * @brief	Enable VBUS to USB1 port in Host mode
- * @return	Nothing
- * @sa		Board_USB1_DisableVbus()
- */
-__STATIC_INLINE void Board_USB1_EnableVbus(void)
-{
-	Chip_GPIO_SetPinDIROutput(LPC_GPIO_PORT, USB1_VBUS_GPIO_PORT_NUM, USB1_VBUS_GPIO_BIT_NUM);
-	Chip_GPIO_SetPinOutLow(LPC_GPIO_PORT, USB1_VBUS_GPIO_PORT_NUM, USB1_VBUS_GPIO_BIT_NUM);
-}
-
-/**
- * @brief	Disable VBUS to USB1 port
- * @return	Nothing
- * @sa		Board_USB1_EnableVbus()
- */
-__STATIC_INLINE void Board_USB1_DisableVbus(void)
-{
-	Chip_GPIO_SetPinDIROutput(LPC_GPIO_PORT, USB1_VBUS_GPIO_PORT_NUM, USB1_VBUS_GPIO_BIT_NUM);
-	Chip_GPIO_SetPinOutHigh(LPC_GPIO_PORT, USB1_VBUS_GPIO_PORT_NUM, USB1_VBUS_GPIO_BIT_NUM);
-}
-
-/**
- * @brief	Initialize individual LED
- * @param	LED number
- * @return	Nothing
- */
-void initLed (const led_t ledNumber);
-
-/**
  * @brief	Initializes board specific GPIO Interrupt
  * @return	Nothing
  */
@@ -254,70 +169,36 @@ void Board_UART_Init(LPC_USART_T *pUART);
  */
 void Board_SDMMC_Init(void);
 
-///**
-// * @brief	Initialize button(s) interface on board
-// * @return	Nothing
-// */
-//void Board_Buttons_Init(void);
-//
-///**
-// * @brief	Initialize joystick interface on board
-// * @return	Nothing
-// */
-//void Board_Joystick_Init(void);
-//
-///**
-// * @brief	Returns joystick states on board
-// * @return	Returns a JOY_* value, ir JOY_PRESS or JOY_UP
-// */
-//uint8_t Joystick_GetStatus(void);
-//
-///**
-// * @brief	Returns button(s) state on board
-// * @return	Returns BUTTONS_BUTTON1 if button1 is pressed
-// */
-//uint32_t Buttons_GetStatus (void);
-//
-///**
-// * @brief	Initialize I2S interface for the board and UDA1380
-// * @param	pI2S	: Pointer to I2S register interface used on this board
-// * @param	micIn	: If 1 MIC will be used as input, if 0 LINE_IN will be used
-// * @return	Nothing
-// */
-//void Board_Audio_Init(LPC_I2S_T *pI2S, int micIn);
-//
-///**
-// * @brief	Initialize DAC
-// * @param	pDAC	: Pointer to DAC register interface used on this board
-// * @return	Nothing
-// */
-void Board_DAC_Init(LPC_DAC_T *pDAC);
-
 /**
- * @brief	Initialize ADC
+ * @brief	Initialize button(s) interface on board
  * @return	Nothing
  */
-STATIC INLINE void Board_ADC_Init(void){}
+void Board_Buttons_Init(void);
 
 /**
- * @brief	Initialize Pinmuxing for the LCD interface
+ * @brief	Initialize joystick interface on board
  * @return	Nothing
  */
-//void Board_LCD_Init(void);
-//
-///**
-// * @brief	Write given data to LCD module
-// * @param	data	: data to be written
-// * @param	size	: number of data items
-// * @return	Nothing
-// */
-//void Board_LCD_WriteData(const uint8_t *data, uint16_t size);
+void Board_Joystick_Init(void);
+
+/**
+ * @brief	Returns joystick states on board
+ * @return	Returns a JOY_* value, ir JOY_PRESS or JOY_UP
+ */
+uint8_t Joystick_GetStatus(void);
+
+/**
+ * @brief	Returns button(s) state on board
+ * @return	Returns BUTTONS_BUTTON1 if button1 is pressed
+ */
+uint32_t Buttons_GetStatus (void);
 
 /**
  * @}
  */
 
 #include "board_api.h"
+#include "lpc_phy.h"
 
 #ifdef __cplusplus
 }

@@ -226,10 +226,10 @@ http_server_netconn_thread(void *arg)
 void
 http_server_netconn_init(void)
 {
-#if (!defined(BOARD_HITEX_EVA_4350) && !defined(BOARD_HITEX_EVA_1850))
-	/* Initialize the file system */
-	fs_init();
-#endif
+//#if (!defined(BOARD_HITEX_EVA_4350) && !defined(BOARD_HITEX_EVA_1850))
+//	/* Initialize the file system */
+//	fs_init();
+//#endif
 	sys_thread_new("http_server_netconn", http_server_netconn_thread, NULL, DEFAULT_THREAD_STACKSIZE + 128, DEFAULT_THREAD_PRIO);
 }
 

@@ -6,23 +6,17 @@
 C_SRCS += \
 ../src/board.c \
 ../src/board_sysinit.c \
-../src/lcd_st7565s.c \
-../src/lpc_phy_smsc87x0.c \
-../src/wm8904.c 
+../src/lpc_phy_smsc87x0.c 
 
 OBJS += \
 ./src/board.o \
 ./src/board_sysinit.o \
-./src/lcd_st7565s.o \
-./src/lpc_phy_smsc87x0.o \
-./src/wm8904.o 
+./src/lpc_phy_smsc87x0.o 
 
 C_DEPS += \
 ./src/board.d \
 ./src/board_sysinit.d \
-./src/lcd_st7565s.d \
-./src/lpc_phy_smsc87x0.d \
-./src/wm8904.d 
+./src/lpc_phy_smsc87x0.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

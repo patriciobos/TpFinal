@@ -117,7 +117,7 @@
 #define EMAC_DEBUG                    LWIP_DBG_OFF
 
 #define DEFAULT_THREAD_PRIO             (tskIDLE_PRIORITY + 1)
-#define DEFAULT_THREAD_STACKSIZE        (256)
+#define DEFAULT_THREAD_STACKSIZE        (512)
 #define DEFAULT_ACCEPTMBOX_SIZE         6
 #define DEFAULT_ACCEPTMBOX_SIZE         6
 #define DEFAULT_TCP_RECVMBOX_SIZE       6
@@ -128,35 +128,16 @@
 /* TCPIP thread must run at higher priority than MAC threads! */
 #define TCPIP_THREAD_PRIO               (DEFAULT_THREAD_PRIO + configMAX_PRIORITIES - 1)
 
-#define TCPIP_THREAD_STACKSIZE          (256)
+#define TCPIP_THREAD_STACKSIZE          (512)
 
 #define TCPIP_MBOX_SIZE                 6
 
 #define MEM_LIBC_MALLOC                 1
 #define MEMP_MEM_MALLOC                 1
 
-/* Required for malloc/free */
-#include <stdlib.h>
-#include <stdint.h>
-#include <string.h>
-#include "lpc_types.h"
+/* Needed for malloc/free */
 #include "FreeRTOS.h"
-
-/* Reentrant Free */
-#define mem_free vPortFree
-
-/* Reentrant Malloc */
-#define mem_malloc  pvPortMalloc
-
-/* Reentrant Calloc */
-STATIC INLINE void *pvPortCalloc(size_t nmemb, size_t size)
-{
-	void *x = mem_malloc(nmemb * size);
-	if (x != NULL)
-		memset(x, 0, nmemb * size);
-	return x;
-}
-
-#define mem_calloc pvPortCalloc
+#define malloc pvPortMalloc
+#define free vPortFree
 
 #endif /* __LWIPOPTS_H_ */

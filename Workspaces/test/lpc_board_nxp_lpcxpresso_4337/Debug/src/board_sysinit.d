@@ -62,7 +62,9 @@ src/board_sysinit.o src/board_sysinit.d: ../src/board_sysinit.c \
  /home/pato/Embebidos/TpFinal/Workspaces/test/lpc_chip_43xx/inc/i2cm_18xx_43xx.h \
  /home/pato/Embebidos/TpFinal/Workspaces/test/lpc_chip_43xx/inc/fpu_init.h \
  /home/pato/Embebidos/TpFinal/Workspaces/test/lpc_board_nxp_lpcxpresso_4337/inc/board_api.h \
- /home/pato/Embebidos/TpFinal/Workspaces/test/lpc_chip_43xx/inc/lpc_types.h
+ /home/pato/Embebidos/TpFinal/Workspaces/test/lpc_chip_43xx/inc/lpc_types.h \
+ /home/pato/Embebidos/TpFinal/Workspaces/test/lpc_board_nxp_lpcxpresso_4337/inc/lpc_phy.h \
+ /home/pato/Embebidos/TpFinal/Workspaces/test/lpc_board_nxp_lpcxpresso_4337/inc/board.h
 
 /home/pato/Embebidos/TpFinal/Workspaces/test/lpc_board_nxp_lpcxpresso_4337/inc/board.h:
 
@@ -191,3 +193,7 @@ src/board_sysinit.o src/board_sysinit.d: ../src/board_sysinit.c \
 /home/pato/Embebidos/TpFinal/Workspaces/test/lpc_board_nxp_lpcxpresso_4337/inc/board_api.h:
 
 /home/pato/Embebidos/TpFinal/Workspaces/test/lpc_chip_43xx/inc/lpc_types.h:
+
+/home/pato/Embebidos/TpFinal/Workspaces/test/lpc_board_nxp_lpcxpresso_4337/inc/lpc_phy.h:
+
+/home/pato/Embebidos/TpFinal/Workspaces/test/lpc_board_nxp_lpcxpresso_4337/inc/board.h:

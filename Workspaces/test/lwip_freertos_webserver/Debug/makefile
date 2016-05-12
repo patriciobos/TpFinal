@@ -36,7 +36,7 @@ all: lwip_freertos_webserver.axf
 lwip_freertos_webserver.axf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU Linker'
-	arm-none-eabi-gcc -nostdlib -L"/home/pato/Embebidos/TpFinal/Workspaces/test/lpc_chip_43xx/Debug" -Xlinker -Map="lwip_freertos_webserver.map" -Xlinker --gc-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -T "lwip_freertos_webserver_Debug.ld" -o "lwip_freertos_webserver.axf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -nostdlib -L"/home/pato/Embebidos/TpFinal/Workspaces/test/lpc_chip_43xx/Debug" -L"/home/pato/Embebidos/TpFinal/Workspaces/test/lpc_board_nxp_lpcxpresso_4337/Debug" -Xlinker -Map="lwip_freertos_webserver.map" -Xlinker --gc-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -T "lwip_freertos_webserver_Debug.ld" -o "lwip_freertos_webserver.axf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build

@@ -1,15 +1,17 @@
-15:59:49 **** Incremental Build of configuration Debug for project ControlAcuario ****
+16:24:59 **** Incremental Build of configuration Debug for project ControlAcuario ****
 make -r all 
 Building file: ../Control/src/cr_startup_lpc43xx.c
 Invoking: MCU C Compiler
 arm-none-eabi-gcc -D__MULTICORE_NONE -DDEBUG -D__CODE_RED -DCORE_M4 -D__USE_LPCOPEN -D__LPC43XX__ -D__REDLIB__ -I"/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/lpc_chip_43xx/inc" -I"/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/lpc_chip_43xx/inc/usbd" -I"/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc" -I"/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/Control/inc" -I"/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/Board/inc" -I"/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/lwip" -I"/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/freeRTOS/inc" -I"/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/arch" -I"/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/ipv4" -I"/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/ipv4/lwip" -I"/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/netif" -I"/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/posix" -I"/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/ControlAcuario/lwIP/inc/posix/sys" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"Control/src/cr_startup_lpc43xx.d" -MT"Control/src/cr_startup_lpc43xx.o" -MT"Control/src/cr_startup_lpc43xx.d" -o "Control/src/cr_startup_lpc43xx.o" "../Control/src/cr_startup_lpc43xx.c"
-../Control/src/cr_startup_lpc43xx.c:61:13: error: missing binary operator before token "("
- #if !define (CRP_NO_CRP)
-             ^
-../Control/src/cr_startup_lpc43xx.c:65:70: error: 'CRP_NO_CRP' undeclared here (not in a function)
- __attribute__ ((used,section(".crp"))) const unsigned int CRP_WORD = CRP_NO_CRP ;
-                                                                      ^
-make: *** [Control/src/cr_startup_lpc43xx.o] Error 1
+Finished building: ../Control/src/cr_startup_lpc43xx.c
+ 
+Building target: ControlAcuario.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/lpc_chip_43xx/Debug" -Xlinker -Map="ControlAcuario.map" -Xlinker --gc-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -T "ControlAcuario_Debug.ld" -o "ControlAcuario.axf"  ./lwIP/src/netif/etharp.o ./lwIP/src/netif/ethernetif.o  ./lwIP/src/core/ipv4/autoip.o ./lwIP/src/core/ipv4/icmp.o ./lwIP/src/core/ipv4/igmp.o ./lwIP/src/core/ipv4/inet.o ./lwIP/src/core/ipv4/inet_chksum.o ./lwIP/src/core/ipv4/ip.o ./lwIP/src/core/ipv4/ip_addr.o ./lwIP/src/core/ipv4/ip_frag.o  ./lwIP/src/core/def.o ./lwIP/src/core/dhcp.o ./lwIP/src/core/dns.o ./lwIP/src/core/init.o ./lwIP/src/core/mem.o ./lwIP/src/core/memp.o ./lwIP/src/core/netif.o ./lwIP/src/core/pbuf.o ./lwIP/src/core/raw.o ./lwIP/src/core/stats.o ./lwIP/src/core/sys.o ./lwIP/src/core/tcp.o ./lwIP/src/core/tcp_in.o ./lwIP/src/core/tcp_out.o ./lwIP/src/core/timers.o ./lwIP/src/core/udp.o  ./lwIP/src/arch/lpc18xx_43xx_emac.o ./lwIP/src/arch/lpc_debug.o ./lwIP/src/arch/sys_arch_freertos.o  ./lwIP/src/api/api_lib.o ./lwIP/src/api/api_msg.o ./lwIP/src/api/err.o ./lwIP/src/api/netbuf.o ./lwIP/src/api/netdb.o ./lwIP/src/api/netifapi.o ./lwIP/src/api/sockets.o ./lwIP/src/api/tcpip.o  ./freeRTOS/src/FreeRTOSCommonHooks.o ./freeRTOS/src/croutine.o ./freeRTOS/src/event_groups.o ./freeRTOS/src/heap_4.o ./freeRTOS/src/list.o ./freeRTOS/src/port.o ./freeRTOS/src/queue.o ./freeRTOS/src/redlib_memfix.o ./freeRTOS/src/tasks.o ./freeRTOS/src/timers.o  ./Control/src/ControlAcuario.o ./Control/src/cr_startup_lpc43xx.o ./Control/src/crp.o ./Control/src/sysinit.o ./Control/src/tcpecho.o  ./Board/src/board.o ./Board/src/board_sysinit.o ./Board/src/ciaaAIN.o ./Board/src/ciaaAOUT.o ./Board/src/ciaaI2C.o ./Board/src/ciaaIO.o ./Board/src/ciaaNVM.o ./Board/src/ciaaUART.o ./Board/src/lpc_phy_smsc87x0.o   -llpc_chip_43xx
+./Control/src/crp.o:(.crp+0x0): multiple definition of `CRP_WORD'
+./Control/src/cr_startup_lpc43xx.o:(.crp+0x0): first defined here
+collect2: error: ld returned 1 exit status
+make: *** [ControlAcuario.axf] Error 1
 
-15:59:49 Build Finished (took 110ms)
+16:25:01 Build Finished (took 1s.562ms)
 
