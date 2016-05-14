@@ -84,6 +84,7 @@ static void prvSetupHardware(void)
 	ciaaIOInit();
 #endif
 
+
 	/* LED0 is used for the link status, on = PHY cable detected */
 	/* Initial LED state is off to show an unconnected cable state */
 //	Board_LED_Set(0, false);
@@ -158,34 +159,18 @@ static void vSetupIFTask (void *pvParameters) {
 
 				/* Set interface speed and duplex */
 				if (physts & PHY_LINK_SPEED100) {
-#ifdef lpc1769
-					Chip_ENET_Set100Mbps(LPC_ETHERNET);
-#else
 					Chip_ENET_SetSpeed(LPC_ETHERNET, 1);
-#endif
 					NETIF_INIT_SNMP(&lpc_netif, snmp_ifType_ethernet_csmacd, 100000000);
 				}
 				else {
-#ifdef lpc1769
-					Chip_ENET_Set10Mbps(LPC_ETHERNET);
-#else
 					Chip_ENET_SetSpeed(LPC_ETHERNET, 0);
-#endif
 					NETIF_INIT_SNMP(&lpc_netif, snmp_ifType_ethernet_csmacd, 10000000);
 				}
 				if (physts & PHY_LINK_FULLDUPLX) {
-#ifdef lpc1769
-					Chip_ENET_SetFullDuplex(LPC_ETHERNET);
-#else
 					Chip_ENET_SetDuplex(LPC_ETHERNET, true);
-#endif
 				}
 				else {
-#ifdef lpc1769
-					Chip_ENET_SetHalfDuplex(LPC_ETHERNET);
-#else
 					Chip_ENET_SetDuplex(LPC_ETHERNET, false);
-#endif
 				}
 
 				tcpip_callback_with_block((tcpip_callback_fn) netif_set_link_up,
@@ -207,6 +192,12 @@ static void vSetupIFTask (void *pvParameters) {
 		if (!prt_ip) {
 			if (lpc_netif.ip_addr.addr) {
 				static char tmp_buff[16];
+//
+//				char msg_ppp[64];
+//				ipaddr_ntoa_r((const ip_addr_t *) &lpc_netif.ip_addr, tmp_buff, 16);
+//				sprintf(msg_ppp,"IP_ADDR    : %s\r\n", tmp_buff);
+//				Board_UARTPutSTR(msg_ppp);
+
 				DEBUGOUT("IP_ADDR    : %s\r\n", ipaddr_ntoa_r((const ip_addr_t *) &lpc_netif.ip_addr, tmp_buff, 16));
 				DEBUGOUT("NET_MASK   : %s\r\n", ipaddr_ntoa_r((const ip_addr_t *) &lpc_netif.netmask, tmp_buff, 16));
 				DEBUGOUT("GATEWAY_IP : %s\r\n", ipaddr_ntoa_r((const ip_addr_t *) &lpc_netif.gw, tmp_buff, 16));
@@ -238,6 +229,8 @@ void msDelay(uint32_t ms)
 int main(void)
 {
 	prvSetupHardware();
+
+	printf("hola");
 
 	/* Add another thread for initializing physical interface. This
 	   is delayed from the main LWIP initialization. */

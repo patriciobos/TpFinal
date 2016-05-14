@@ -165,7 +165,11 @@ typedef void (*p_msDelay_func_t)(uint32_t);
 
 #else
 #define DEBUGINIT() Board_Debug_Init()
-#define DEBUGOUT(...) printf(__VA_ARGS__)
+#define DEBUGOUT(...) { \
+char msg_ppp[64]; \
+sprintf(msg_ppp,__VA_ARGS__); \
+Board_UARTPutSTR(msg_ppp); \
+}
 #define DEBUGSTR(str) Board_UARTPutSTR(str)
 #define DEBUGIN() Board_UARTGetChar()
 #endif /* defined(DEBUG_SEMIHOSTING) */
@@ -176,6 +180,14 @@ typedef void (*p_msDelay_func_t)(uint32_t);
 #define DEBUGSTR(str)
 #define DEBUGIN() (int) EOF
 #endif /* defined(DEBUG_ENABLE) */
+
+
+#define DEBUGOUT(...) { \
+char msg_ppp[64]; \
+sprintf(msg_ppp,__VA_ARGS__); \
+Board_UARTPutSTR(msg_ppp); \
+}
+
 
 /**
  * @}

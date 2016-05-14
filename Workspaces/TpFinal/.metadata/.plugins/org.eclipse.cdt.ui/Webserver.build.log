@@ -1,6 +1,6 @@
-19:09:01 **** Incremental Build of configuration Debug for project Webserver ****
+14:41:37 **** Incremental Build of configuration Debug for project Webserver ****
 make -r all 
 make: No se hace nada para «all».
 
-19:09:01 Build Finished (took 110ms)
+14:41:37 Build Finished (took 108ms)
 

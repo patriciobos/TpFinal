@@ -78,6 +78,7 @@ void Board_Debug_Init(void)
 	Chip_UART_TXEnable(DEBUG_UART);
 
 	Board_UARTPutSTR("UART initialized...\n");
+	DEBUGSTR("otra cosa\n");
 #endif
 }
 
@@ -221,8 +222,8 @@ void Board_ENET_GetMacADDR(uint8_t *mcaddr)
 void Board_Init(void)
 {
 	/* Sets up DEBUG UART */
-	DEBUGINIT();
-//	Board_Debug_Init();
+//	DEBUGINIT();
+	Board_Debug_Init();
 
 	/* Initializes GPIO */
 	Chip_GPIO_Init(LPC_GPIO_PORT);

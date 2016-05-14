@@ -2,9 +2,9 @@
 <section name="Workbench">
 	<item value="CIAA_NXP" key="org.eclipse.cdt.utils.ui.controls.FileListControl"/>
 	<section name="org.eclipse.cdt.ui.OPEN_ACTION_SELECTION_DIALOG_SECTION">
-		<item value="446" key="DIALOG_WIDTH"/>
+		<item value="448" key="DIALOG_WIDTH"/>
 		<item value="1|Cantarell|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
-		<item value="599" key="DIALOG_HEIGHT"/>
+		<item value="600" key="DIALOG_HEIGHT"/>
 		<item value="578" key="DIALOG_X_ORIGIN"/>
 		<item value="38" key="DIALOG_Y_ORIGIN"/>
 	</section>
@@ -18,6 +18,7 @@
 		<item value="false" key="caseSensitive"/>
 		<item value="227191" key="searchFlags"/>
 		<list key="previousPatterns">
+			<item value="newlib_stub"/>
 			<item value="BOARD_ENET_PHY_ADDR"/>
 		</list>
 	</section>
