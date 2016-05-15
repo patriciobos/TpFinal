@@ -174,20 +174,23 @@ Board_UARTPutSTR(msg_ppp); \
 #define DEBUGIN() Board_UARTGetChar()
 #endif /* defined(DEBUG_SEMIHOSTING) */
 
+/*
 #else
 #define DEBUGINIT()
 #define DEBUGOUT(...)
 #define DEBUGSTR(str)
 #define DEBUGIN() (int) EOF
+*/
 #endif /* defined(DEBUG_ENABLE) */
 
 
 #define DEBUGOUT(...) { \
-char msg_ppp[64]; \
-sprintf(msg_ppp,__VA_ARGS__); \
-Board_UARTPutSTR(msg_ppp); \
+char msg_aux[64]; \
+sprintf(msg_aux,__VA_ARGS__); \
+Board_UARTPutSTR(msg_aux); \
 }
 
+#define DEBUGSTR(str) Board_UARTPutSTR(str)
 
 /**
  * @}

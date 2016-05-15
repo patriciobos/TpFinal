@@ -106,7 +106,17 @@ typedef uintptr_t          mem_ptr_t;
 void assert_printf(char *msg, int line, char *file);
 
 /* Plaform specific diagnostic output */
-#define LWIP_PLATFORM_DIAG(vars) printf vars
+//#define LWIP_PLATFORM_DIAG(vars) printf vars
+
+#define LWIP_PLATFORM_DIAG(vars) { \
+char msg_lwip[64]; \
+sprintf(msg_lwip,(const char *) vars); \
+Board_UARTPutSTR(msg_lwip); \
+}
+
+//#define LWIP_PLATFORM_DIAG(vars) Board_UARTPutSTR((const char *) vars)
+
+
 #define LWIP_PLATFORM_ASSERT(flag) { assert_printf((flag), __LINE__, __FILE__); }
 #else
 

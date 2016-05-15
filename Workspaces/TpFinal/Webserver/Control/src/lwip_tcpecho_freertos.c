@@ -78,6 +78,9 @@ static struct netif lpc_netif;
 static void prvSetupHardware(void)
 {
 	SystemCoreClockUpdate();
+
+	Board_SystemInit();
+
 	Board_Init();
 
 #if defined(lpc4337_m4)
@@ -192,15 +195,13 @@ static void vSetupIFTask (void *pvParameters) {
 		if (!prt_ip) {
 			if (lpc_netif.ip_addr.addr) {
 				static char tmp_buff[16];
-//
-//				char msg_ppp[64];
-//				ipaddr_ntoa_r((const ip_addr_t *) &lpc_netif.ip_addr, tmp_buff, 16);
-//				sprintf(msg_ppp,"IP_ADDR    : %s\r\n", tmp_buff);
-//				Board_UARTPutSTR(msg_ppp);
 
 				DEBUGOUT("IP_ADDR    : %s\r\n", ipaddr_ntoa_r((const ip_addr_t *) &lpc_netif.ip_addr, tmp_buff, 16));
 				DEBUGOUT("NET_MASK   : %s\r\n", ipaddr_ntoa_r((const ip_addr_t *) &lpc_netif.netmask, tmp_buff, 16));
 				DEBUGOUT("GATEWAY_IP : %s\r\n", ipaddr_ntoa_r((const ip_addr_t *) &lpc_netif.gw, tmp_buff, 16));
+				// Ugly delay for clearing timing issues
+					uint32_t i;
+					for(i=0;i<0xFFFF;i++);
 				prt_ip = 1;
 			}
 		}
@@ -229,8 +230,6 @@ void msDelay(uint32_t ms)
 int main(void)
 {
 	prvSetupHardware();
-
-	printf("hola");
 
 	/* Add another thread for initializing physical interface. This
 	   is delayed from the main LWIP initialization. */

@@ -101,16 +101,18 @@
 #define LINK_STATS                      0
 #define LWIP_STATS_DISPLAY              0
 
+
+//#define LWIP_DEBUG 1
 /* There are more *_DEBUG options that can be selected.
    See opts.h. Make sure that LWIP_DEBUG is defined when
    building the code to use debug. */
-#define TCP_DEBUG                       LWIP_DBG_OFF
-#define ETHARP_DEBUG                    LWIP_DBG_OFF
-#define PBUF_DEBUG                      LWIP_DBG_OFF
-#define IP_DEBUG                        LWIP_DBG_OFF
-#define TCPIP_DEBUG                     LWIP_DBG_OFF
-#define DHCP_DEBUG                      LWIP_DBG_OFF
-#define UDP_DEBUG                       LWIP_DBG_OFF
+#define TCP_DEBUG                       LWIP_DBG_ON
+#define ETHARP_DEBUG                    LWIP_DBG_ON
+#define PBUF_DEBUG                      LWIP_DBG_ON
+#define IP_DEBUG                        LWIP_DBG_ON
+#define TCPIP_DEBUG                     LWIP_DBG_ON
+#define DHCP_DEBUG                      LWIP_DBG_ON
+#define UDP_DEBUG                       LWIP_DBG_ON
 
 /* This define is custom for the LPC EMAC driver. Enabled it to
    get debug messages for the driver. */

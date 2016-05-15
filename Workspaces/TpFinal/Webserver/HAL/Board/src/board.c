@@ -77,8 +77,12 @@ void Board_Debug_Init(void)
 	/* Enable UART Transmit */
 	Chip_UART_TXEnable(DEBUG_UART);
 
-	Board_UARTPutSTR("UART initialized...\n");
-	DEBUGSTR("otra cosa\n");
+	Board_UARTPutSTR("UART initialized.........[OK]\r\n");
+
+	// Ugly delay for clearing timing issues
+	uint32_t i;
+	for(i=0;i<0xFFF;i++);
+
 #endif
 }
 
@@ -165,6 +169,13 @@ void Board_Ciaa_Gpios()
 	   Chip_GPIO_SetDir(LPC_GPIO_PORT, 5,(1<<1),1);
 	   Chip_GPIO_ClearValue(LPC_GPIO_PORT, 2,(1<<4)|(1<<5)|(1<<6));
 	   Chip_GPIO_ClearValue(LPC_GPIO_PORT, 5,(1<<1));
+
+	   Board_UARTPutSTR("Board GPIOs initialized..[OK]\r\n");
+
+	   // Ugly delay for clearing timing issues
+	   	uint32_t i;
+	   	for(i=0;i<0xFFF;i++);
+
 }
 
 void Board_LED_Set(uint8_t LEDNumber, bool On)
@@ -221,6 +232,7 @@ void Board_ENET_GetMacADDR(uint8_t *mcaddr)
    board hardware */
 void Board_Init(void)
 {
+
 	/* Sets up DEBUG UART */
 //	DEBUGINIT();
 	Board_Debug_Init();
@@ -230,7 +242,7 @@ void Board_Init(void)
 
 	Board_Ciaa_Gpios();
 
-	Board_SystemInit();
+
 
 	/* Setup GPIOs for USB demos */
 //	Chip_SCU_PinMuxSet(0x2, 6, (SCU_MODE_PULLUP | SCU_MODE_INBUFF_EN | SCU_MODE_FUNC4));			/* P2_6 USB1_PWR_EN, USB1 VBus function */
