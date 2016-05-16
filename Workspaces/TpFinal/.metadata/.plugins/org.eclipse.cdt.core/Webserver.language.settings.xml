@@ -33,6 +33,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/rtc_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -63,6 +64,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/arch/sys_arch_freertos.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -93,6 +95,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Base/crp.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -123,6 +126,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/atimer_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -153,6 +157,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/sct_pwm_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -183,6 +188,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="freeRTOS/src/event_groups.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -213,6 +219,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/iap_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -243,6 +250,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/ssp_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -273,6 +281,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Base/sysinit.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -303,6 +312,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/core/ipv4/icmp.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -333,6 +343,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/i2s_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -363,6 +374,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/emc_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -393,6 +405,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/core/ipv4/ip.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -423,6 +436,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/pmc_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -453,6 +467,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/ritimer_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -483,6 +498,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="freeRTOS/src/tasks.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -513,6 +529,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/api/api_lib.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -543,6 +560,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/core/tcp_in.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -573,6 +591,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/api/netbuf.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -603,6 +622,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="freeRTOS/src/croutine.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -633,6 +653,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/ccan_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -663,6 +684,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/chip_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -693,6 +715,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Board/src/board_sysinit.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -723,6 +746,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="Control/src/lwip_tcpecho_freertos.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -753,6 +777,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/core/ipv4/inet.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -783,6 +808,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/hsadc_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -813,6 +839,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/sdmmc_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -843,6 +870,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/dac_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -873,6 +901,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/uart_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -903,6 +932,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/wwdt_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -933,6 +963,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/core/tcp_out.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -963,6 +994,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/i2cm_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -993,6 +1025,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/api/sockets.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -1023,6 +1056,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/core/stats.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -1053,6 +1087,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="freeRTOS/src/list.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -1083,6 +1118,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/i2c_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -1113,6 +1149,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/core/def.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -1143,6 +1180,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/arch/lpc18xx_43xx_emac.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -1173,6 +1211,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/gpiogroup_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -1203,6 +1242,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/api/api_msg.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -1233,6 +1273,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/spi_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -1263,6 +1304,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/adc_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -1293,6 +1335,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/core/dhcp.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -1323,6 +1366,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/core/memp.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -1353,6 +1397,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/core/netif.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -1383,6 +1428,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/enet_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -1413,6 +1459,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/core/timers.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -1443,6 +1490,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/api/err.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -1473,6 +1521,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/gpio_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -1503,6 +1552,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="Control/src/cr_redlib_heap_fix.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -1533,6 +1583,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/core/sys.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -1563,6 +1614,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Board/src/board.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -1593,6 +1645,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/core/pbuf.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -1623,6 +1676,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/pinint_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -1653,6 +1707,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/core/ipv4/igmp.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -1683,6 +1738,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/lcd_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -1713,6 +1769,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/sdif_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -1743,6 +1800,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/sdio_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -1773,6 +1831,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/stopwatch_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -1803,6 +1862,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/eeprom_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -1833,6 +1893,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/api/netdb.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -1863,6 +1924,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="Control/src/newlib_stubs.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -1923,6 +1985,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="freeRTOS/src/redlib_memfix.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -1953,6 +2016,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/core/ipv4/autoip.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -1983,6 +2047,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/otp_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -2013,6 +2078,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/core/mem.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -2043,6 +2109,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="Control/src/tcpecho.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -2073,6 +2140,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="freeRTOS/src/FreeRTOSCommonHooks.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -2103,6 +2171,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/core/ipv4/ip_addr.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -2133,6 +2202,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/arch/lpc_debug.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -2163,6 +2233,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/api/tcpip.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -2193,6 +2264,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="freeRTOS/src/port.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -2223,6 +2295,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/netif/etharp.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -2253,6 +2326,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Base/cr_startup_lpc43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -2283,6 +2357,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/core/udp.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -2313,6 +2388,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="freeRTOS/src/queue.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -2343,6 +2419,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/gpdma_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -2373,6 +2450,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/ring_buffer.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -2403,6 +2481,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Board/src/lpc_phy_smsc87x0.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -2433,6 +2512,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/timer_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -2463,6 +2543,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/sysinit_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -2493,6 +2574,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/sct_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -2523,6 +2605,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/netif/ethernetif.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -2553,6 +2636,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/api/netifapi.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -2583,6 +2667,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/core/tcp.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -2613,6 +2698,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/core/init.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -2643,6 +2729,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/core/raw.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -2673,6 +2760,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/core/dns.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -2703,6 +2791,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/aes_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -2733,6 +2822,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/clock_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -2763,6 +2853,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="lwIP/src/core/ipv4/inet_chksum.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -2793,6 +2884,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="freeRTOS/src/heap_4.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -2823,6 +2915,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="freeRTOS/src/timers.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -2853,6 +2946,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/Chip/src/evrt_18xx_43xx.c">
 						<entry kind="includePath" name="/${ProjName}/Control/inc">
@@ -2883,6 +2977,7 @@
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>
 						<entry kind="macro" name="__NEWLIB__" value=""/>
+						<entry kind="macro" name="__USE_LPCOPEN" value=""/>
 					</resource>
 				</language>
 			</provider>

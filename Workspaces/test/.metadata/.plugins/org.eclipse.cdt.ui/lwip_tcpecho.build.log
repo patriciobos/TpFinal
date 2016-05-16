@@ -1,6 +1,0 @@
-15:19:22 **** Incremental Build of configuration Debug for project lwip_tcpecho ****
-make -r all 
-make: No se hace nada para «all».
-
-15:19:22 Build Finished (took 62ms)
-

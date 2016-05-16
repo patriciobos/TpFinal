@@ -1,42 +1,6 @@
-12:51:38 **** Incremental Build of configuration Debug for project Webserver ****
+16:13:12 **** Incremental Build of configuration Debug for project Webserver ****
 make -r all 
-Building file: ../HAL/Board/src/board.c
-Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__MULTICORE_NONE -DDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -D__NEWLIB__ -I"/home/patricio/Embebidos/TpFinal/Workspaces/TpFinal/Webserver/Control/inc" -I"/home/patricio/Embebidos/TpFinal/Workspaces/TpFinal/Webserver/lwIP/inc/ipv4" -I"/home/patricio/Embebidos/TpFinal/Workspaces/TpFinal/Webserver/freeRTOS/inc" -I"/home/patricio/Embebidos/TpFinal/Workspaces/TpFinal/Webserver/HAL/Board/inc" -I"/home/patricio/Embebidos/TpFinal/Workspaces/TpFinal/Webserver/HAL/Chip/inc" -I"/home/patricio/Embebidos/TpFinal/Workspaces/TpFinal/Webserver/HAL/Chip/inc/usbd" -I"/home/patricio/Embebidos/TpFinal/Workspaces/TpFinal/Webserver/lwIP/inc" -I/usr/local/lpcxpresso_8.0.0_526/lpcxpresso/tools/arm-none-eabi/include -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"HAL/Board/src/board.d" -MT"HAL/Board/src/board.o" -MT"HAL/Board/src/board.d" -o "HAL/Board/src/board.o" "../HAL/Board/src/board.c"
-../HAL/Board/src/board.c:120:13: warning: 'Board_LED_Init' defined but not used [-Wunused-function]
- static void Board_LED_Init()
-             ^
-Finished building: ../HAL/Board/src/board.c
- 
-Building file: ../Control/src/lwip_tcpecho_freertos.c
-Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__MULTICORE_NONE -DDEBUG -D__CODE_RED -DCORE_M4 -D__LPC43XX__ -D__NEWLIB__ -I"/home/patricio/Embebidos/TpFinal/Workspaces/TpFinal/Webserver/Control/inc" -I"/home/patricio/Embebidos/TpFinal/Workspaces/TpFinal/Webserver/lwIP/inc/ipv4" -I"/home/patricio/Embebidos/TpFinal/Workspaces/TpFinal/Webserver/freeRTOS/inc" -I"/home/patricio/Embebidos/TpFinal/Workspaces/TpFinal/Webserver/HAL/Board/inc" -I"/home/patricio/Embebidos/TpFinal/Workspaces/TpFinal/Webserver/HAL/Chip/inc" -I"/home/patricio/Embebidos/TpFinal/Workspaces/TpFinal/Webserver/HAL/Chip/inc/usbd" -I"/home/patricio/Embebidos/TpFinal/Workspaces/TpFinal/Webserver/lwIP/inc" -I/usr/local/lpcxpresso_8.0.0_526/lpcxpresso/tools/arm-none-eabi/include -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -D__NEWLIB__ -MMD -MP -MF"Control/src/lwip_tcpecho_freertos.d" -MT"Control/src/lwip_tcpecho_freertos.o" -MT"Control/src/lwip_tcpecho_freertos.d" -o "Control/src/lwip_tcpecho_freertos.o" "../Control/src/lwip_tcpecho_freertos.c"
-In file included from /home/patricio/Embebidos/TpFinal/Workspaces/TpFinal/Webserver/lwIP/inc/arch/sys_arch.h:39:0,
-                 from /home/patricio/Embebidos/TpFinal/Workspaces/TpFinal/Webserver/lwIP/inc/lwip/sys.h:86,
-                 from ../Control/src/lwip_tcpecho_freertos.c:34:
-../Control/src/lwip_tcpecho_freertos.c: In function 'main':
-/home/patricio/Embebidos/TpFinal/Workspaces/TpFinal/Webserver/freeRTOS/inc/task.h:330:134: warning: pointer targets in passing argument 2 of 'xTaskGenericCreate' differ in signedness [-Wpointer-sign]
- #define xTaskCreate( pvTaskCode, pcName, usStackDepth, pvParameters, uxPriority, pxCreatedTask ) xTaskGenericCreate( ( pvTaskCode ), ( pcName ), ( usStackDepth ), ( pvParameters ), ( uxPriority ), ( pxCreatedTask ), ( NULL ), ( NULL ) )
-                                                                                                                                      ^
-../Control/src/lwip_tcpecho_freertos.c:236:2: note: in expansion of macro 'xTaskCreate'
-  xTaskCreate(vSetupIFTask, (signed char *) "SetupIFx",
-  ^
-/home/patricio/Embebidos/TpFinal/Workspaces/TpFinal/Webserver/freeRTOS/inc/task.h:1516:12: note: expected 'const char * const' but argument is of type 'signed char *'
- BaseType_t xTaskGenericCreate( TaskFunction_t pxTaskCode, const char * const pcName, const uint16_t usStackDepth, void * const pvParameters, UBaseType_t uxPriority, TaskHandle_t * const pxCreatedTask, StackType_t * const puxStackBuffer, const MemoryRegion_t * const xRegions ) PRIVILEGED_FUNCTION; /*lint !e971 Unqualified char types are allowed for strings and single characters only. */
-            ^
-Finished building: ../Control/src/lwip_tcpecho_freertos.c
- 
-Building target: Webserver.axf
-Invoking: MCU Linker
-arm-none-eabi-gcc -nostdlib -Xlinker -Map="Webserver.map" -Xlinker --gc-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -T "Webserver_Debug.ld" -o "Webserver.axf"  ./lwIP/src/netif/etharp.o ./lwIP/src/netif/ethernetif.o  ./lwIP/src/core/ipv4/autoip.o ./lwIP/src/core/ipv4/icmp.o ./lwIP/src/core/ipv4/igmp.o ./lwIP/src/core/ipv4/inet.o ./lwIP/src/core/ipv4/inet_chksum.o ./lwIP/src/core/ipv4/ip.o ./lwIP/src/core/ipv4/ip_addr.o ./lwIP/src/core/ipv4/ip_frag.o  ./lwIP/src/core/def.o ./lwIP/src/core/dhcp.o ./lwIP/src/core/dns.o ./lwIP/src/core/init.o ./lwIP/src/core/mem.o ./lwIP/src/core/memp.o ./lwIP/src/core/netif.o ./lwIP/src/core/pbuf.o ./lwIP/src/core/raw.o ./lwIP/src/core/stats.o ./lwIP/src/core/sys.o ./lwIP/src/core/tcp.o ./lwIP/src/core/tcp_in.o ./lwIP/src/core/tcp_out.o ./lwIP/src/core/timers.o ./lwIP/src/core/udp.o  ./lwIP/src/arch/lpc18xx_43xx_emac.o ./lwIP/src/arch/lpc_debug.o ./lwIP/src/arch/sys_arch_freertos.o  ./lwIP/src/api/api_lib.o ./lwIP/src/api/api_msg.o ./lwIP/src/api/err.o ./lwIP/src/api/netbuf.o ./lwIP/src/api/netdb.o ./lwIP/src/api/netifapi.o ./lwIP/src/api/sockets.o ./lwIP/src/api/tcpip.o  ./freeRTOS/src/FreeRTOSCommonHooks.o ./freeRTOS/src/croutine.o ./freeRTOS/src/event_groups.o ./freeRTOS/src/heap_4.o ./freeRTOS/src/list.o ./freeRTOS/src/port.o ./freeRTOS/src/queue.o ./freeRTOS/src/redlib_memfix.o ./freeRTOS/src/tasks.o ./freeRTOS/src/timers.o  ./HAL/Chip/src/adc_18xx_43xx.o ./HAL/Chip/src/aes_18xx_43xx.o ./HAL/Chip/src/atimer_18xx_43xx.o ./HAL/Chip/src/ccan_18xx_43xx.o ./HAL/Chip/src/chip_18xx_43xx.o ./HAL/Chip/src/clock_18xx_43xx.o ./HAL/Chip/src/dac_18xx_43xx.o ./HAL/Chip/src/eeprom_18xx_43xx.o ./HAL/Chip/src/emc_18xx_43xx.o ./HAL/Chip/src/enet_18xx_43xx.o ./HAL/Chip/src/evrt_18xx_43xx.o ./HAL/Chip/src/fpu_init.o ./HAL/Chip/src/gpdma_18xx_43xx.o ./HAL/Chip/src/gpio_18xx_43xx.o ./HAL/Chip/src/gpiogroup_18xx_43xx.o ./HAL/Chip/src/hsadc_18xx_43xx.o ./HAL/Chip/src/i2c_18xx_43xx.o ./HAL/Chip/src/i2cm_18xx_43xx.o ./HAL/Chip/src/i2s_18xx_43xx.o ./HAL/Chip/src/iap_18xx_43xx.o ./HAL/Chip/src/lcd_18xx_43xx.o ./HAL/Chip/src/otp_18xx_43xx.o ./HAL/Chip/src/pinint_18xx_43xx.o ./HAL/Chip/src/pmc_18xx_43xx.o ./HAL/Chip/src/ring_buffer.o ./HAL/Chip/src/ritimer_18xx_43xx.o ./HAL/Chip/src/rtc_18xx_43xx.o ./HAL/Chip/src/sct_18xx_43xx.o ./HAL/Chip/src/sct_pwm_18xx_43xx.o ./HAL/Chip/src/sdif_18xx_43xx.o ./HAL/Chip/src/sdio_18xx_43xx.o ./HAL/Chip/src/sdmmc_18xx_43xx.o ./HAL/Chip/src/spi_18xx_43xx.o ./HAL/Chip/src/ssp_18xx_43xx.o ./HAL/Chip/src/stopwatch_18xx_43xx.o ./HAL/Chip/src/sysinit_18xx_43xx.o ./HAL/Chip/src/timer_18xx_43xx.o ./HAL/Chip/src/uart_18xx_43xx.o ./HAL/Chip/src/wwdt_18xx_43xx.o  ./HAL/Board/src/board.o ./HAL/Board/src/board_sysinit.o ./HAL/Board/src/lpc_phy_smsc87x0.o  ./HAL/Base/cr_startup_lpc43xx.o ./HAL/Base/crp.o ./HAL/Base/sysinit.o  ./Control/src/cr_redlib_heap_fix.o ./Control/src/lwip_tcpecho_freertos.o ./Control/src/tcpecho.o   
-Finished building target: Webserver.axf
- 
-make --no-print-directory post-build
-Performing post-build steps
-arm-none-eabi-size "Webserver.axf"; # arm-none-eabi-objcopy -v -O binary "Webserver.axf" "Webserver.bin" ; # checksum -p LPC4337 -d "Webserver.bin";
-   text	   data	    bss	    dec	    hex	filename
-  62576	  32888	   1452	  96916	  17a94	Webserver.axf
- 
+make: No se hace nada para «all».
 
-12:51:38 Build Finished (took 665ms)
+16:13:13 Build Finished (took 120ms)
 

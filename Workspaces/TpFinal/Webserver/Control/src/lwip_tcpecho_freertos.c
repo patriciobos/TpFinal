@@ -79,8 +79,6 @@ static void prvSetupHardware(void)
 {
 	SystemCoreClockUpdate();
 
-	Board_SystemInit();
-
 	Board_Init();
 
 #if defined(lpc4337_m4)
