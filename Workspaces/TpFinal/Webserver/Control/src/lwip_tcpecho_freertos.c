@@ -29,6 +29,8 @@
  * this code.
  */
 
+/* ------------------------ LWIP includes --------------------------------- */
+#include "lwip/api.h"
 #include "lwip/init.h"
 #include "lwip/opt.h"
 #include "lwip/sys.h"
@@ -43,17 +45,18 @@
 #include "lwip/dhcp.h"
 #endif
 
-#include "board.h"
-#ifdef lpc1769
-#include "arch/lpc17xx_40xx_emac.h"
-#else
-#include "arch/lpc18xx_43xx_emac.h"
-#endif
-
 #include "arch/lpc_arch.h"
 #include "arch/sys_arch.h"
 #include "lpc_phy.h"/* For the PHY monitor support */
+
+
+#include "board.h"
+#include "arch/lpc18xx_43xx_emac.h"
+
+/* ------------------------ Application includes -------------------------- */
 #include "tcpecho.h"
+//#include "http_server.h"
+#include "httpd.h"
 
 #if defined(lpc4337_m4)
 #include "ciaaIO.h"
@@ -99,11 +102,12 @@ static void tcpip_init_done_signal(void *arg)
 }
 
 /* LWIP kickoff and PHY link monitor thread */
-static void vSetupIFTask (void *pvParameters) {
+static void vSetupIFTask (void *pvParameters) 
+{
 	ip_addr_t ipaddr, netmask, gw;
 	volatile s32_t tcpipdone = 0;
 	uint32_t physts;
-	static int prt_ip = 0;
+	static int prt_ip = 1;
 
 	/* Wait until the TCP/IP thread is finished before
 	   continuing or wierd things may happen */
@@ -131,6 +135,7 @@ static void vSetupIFTask (void *pvParameters) {
 				   tcpip_input)) {
 		LWIP_ASSERT("Net interface failed to initialize\r\n", 0);
 	}
+
 	netif_set_default(&lpc_netif);
 	netif_set_up(&lpc_netif);
 
@@ -143,7 +148,10 @@ static void vSetupIFTask (void *pvParameters) {
 #endif
 
 	/* Initialize and start application */
-	tcpecho_init();
+//	tcpecho_init();
+
+//	http_server_netconn_init();
+	httpd_init();
 
 	/* This loop monitors the PHY link and will handle cable events
 	   via the PHY driver. */

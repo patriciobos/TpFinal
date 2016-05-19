@@ -1,6 +1,13 @@
-18:03:38 **** Incremental Build of configuration Debug for project lwip_freertos_webserver ****
+13:32:08 **** Incremental Build of configuration Debug for project lwip_freertos_webserver ****
 make -r all 
-make: No se hace nada para «all».
+Building file: ../fatfs/src/fs_mci.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__MULTICORE_NONE -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -D__REDLIB__ -DCORE_M4 -I"/home/pato/Embebidos/TpFinal/Workspaces/Workspace LPCOPEN/lpc_chip_43xx/inc" -I"/home/pato/Embebidos/TpFinal/Workspaces/Workspace LPCOPEN/lpc_board_nxp_lpcxpresso_4337/inc" -I"/home/pato/Embebidos/TpFinal/Workspaces/Workspace LPCOPEN/lwip_freertos_webserver/example/inc" -I"/home/pato/Embebidos/TpFinal/Workspaces/Workspace LPCOPEN/lwip_freertos_webserver/lwip/inc" -I"/home/pato/Embebidos/TpFinal/Workspaces/Workspace LPCOPEN/lwip_freertos_webserver/lwip/inc/ipv4" -I"/home/pato/Embebidos/TpFinal/Workspaces/Workspace LPCOPEN/lwip_freertos_webserver/fatfs/inc" -I"/home/pato/Embebidos/TpFinal/Workspaces/Workspace LPCOPEN/lwip_freertos_webserver/freertos/inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fsingle-precision-constant -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -specs=redlib.specs -MMD -MP -MF"fatfs/src/fs_mci.d" -MT"fatfs/src/fs_mci.o" -MT"fatfs/src/fs_mci.d" -o "fatfs/src/fs_mci.o" "../fatfs/src/fs_mci.c"
+../fatfs/src/fs_mci.c:32:23: fatal error: fsmci_cfg.h: No such file or directory
+ #include "fsmci_cfg.h"
+                       ^
+compilation terminated.
+make: *** [fatfs/src/fs_mci.o] Error 1
 
-18:03:38 Build Finished (took 58ms)
+13:32:08 Build Finished (took 111ms)
 

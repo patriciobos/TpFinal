@@ -11,5 +11,5 @@ gdb.openocd.initialReset.type=init
 gdb.openocd.preRun.other=
 gdb.openocd.preRunReset.type=halt
 gdb.server.doStart=true
-gdb.server.executable=/home/patricio/Embebidos/TpFinal/Workspaces/TpFinal/openocd-0.9.0/src/openocd
-gdb.server.other=-f /home/patricio/Embebidos/TpFinal/Workspaces/TpFinal/lpc4337.cfg
+gdb.server.executable=/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/openocd-0.9.0/src/openocd
+gdb.server.other=-f /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/lpc4337.cfg

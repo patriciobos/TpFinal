@@ -77,7 +77,7 @@ void Board_Debug_Init(void)
 	/* Enable UART Transmit */
 	Chip_UART_TXEnable(DEBUG_UART);
 
-	Board_UARTPutSTR("UART initialized.........[OK]\r\n");
+	Board_UARTPutSTR("\r\nUART initialized.........[OK]\r\n");
 
 	// Ugly delay for clearing timing issues
 	uint32_t i;

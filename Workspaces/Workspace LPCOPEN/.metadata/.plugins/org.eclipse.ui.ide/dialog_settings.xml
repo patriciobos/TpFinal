@@ -2,17 +2,18 @@
 <section name="Workbench">
 	<list key="installedFeatures">
 		<item value="com.crt.lpcxpresso.feature:8.0.0.201511182220"/>
-		<item value="ilg.gnuarmeclipse.codered:1.1.1.201512141335"/>
-		<item value="ilg.gnuarmeclipse.debug.gdbjtag.jlink:3.2.1.201512141335"/>
-		<item value="ilg.gnuarmeclipse.debug.gdbjtag.openocd:3.2.1.201512141335"/>
-		<item value="ilg.gnuarmeclipse.debug.gdbjtag.qemu:2.1.3.201512141335"/>
-		<item value="ilg.gnuarmeclipse.doc.user:1.1.1.201512141335"/>
-		<item value="ilg.gnuarmeclipse.managedbuild.cross:2.1.1.201512141335"/>
-		<item value="ilg.gnuarmeclipse.packs:2.2.2.201512141335"/>
-		<item value="ilg.gnuarmeclipse.templates.ad:1.1.3.201512141335"/>
-		<item value="ilg.gnuarmeclipse.templates.cortexm:1.3.1.201512141335"/>
-		<item value="ilg.gnuarmeclipse.templates.freescale:2.2.7.201512141335"/>
-		<item value="ilg.gnuarmeclipse.templates.stm:2.4.2.201512141335"/>
+		<item value="ilg.gnuarmeclipse.codered:1.1.1.201604190915"/>
+		<item value="ilg.gnuarmeclipse.debug.gdbjtag.jlink:3.2.1.201604190915"/>
+		<item value="ilg.gnuarmeclipse.debug.gdbjtag.openocd:3.2.1.201604190915"/>
+		<item value="ilg.gnuarmeclipse.debug.gdbjtag.pyocd:0.2.0.201604190915"/>
+		<item value="ilg.gnuarmeclipse.debug.gdbjtag.qemu:2.1.3.201604190915"/>
+		<item value="ilg.gnuarmeclipse.doc.user:1.1.1.201604190915"/>
+		<item value="ilg.gnuarmeclipse.managedbuild.cross:2.2.1.201604190915"/>
+		<item value="ilg.gnuarmeclipse.packs:2.2.2.201604190915"/>
+		<item value="ilg.gnuarmeclipse.templates.ad:1.1.3.201604190915"/>
+		<item value="ilg.gnuarmeclipse.templates.cortexm:1.3.1.201604190915"/>
+		<item value="ilg.gnuarmeclipse.templates.freescale:2.2.7.201604190915"/>
+		<item value="ilg.gnuarmeclipse.templates.stm:2.5.1.201604190915"/>
 		<item value="org.eclipse.cdt.gdb:8.8.0.201509131935"/>
 		<item value="org.eclipse.cdt:8.8.0.201509131935"/>
 		<item value="org.eclipse.cvs:1.4.200.v20150904-0015"/>
@@ -21,20 +22,19 @@
 		<item value="org.eclipse.help:2.1.1.v20150904-0015"/>
 		<item value="org.eclipse.platform:4.5.1.v20150904-0015"/>
 		<item value="org.eclipse.rcp:4.5.1.v20150904-0015"/>
-		<item value="org.gna.eclox.hot:0.8.0"/>
-		<item value="org.gna.eclox:0.8.0"/>
 	</list>
 	<section name="ExternalProjectImportWizard">
 		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
-		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
-		<item value="true" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/home/pato/Embebidos/TpFinal/Workspaces/Workspace LPCOPEN"/>
 			<item value=""/>
 			<item value="/home/patricio/Embebidos/tpfinal/Workspace"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
-			<item value="/home/patricio/LPCOPEN_CIAA.zip"/>
 			<item value=""/>
+			<item value="/home/patricio/LPCOPEN_CIAA.zip"/>
 			<item value="/home/patricio/Embebidos/LPCXpresso/lpcopen_2_16_lpcxpresso_nxp_lpcxpresso_4337.zip"/>
 		</list>
 	</section>

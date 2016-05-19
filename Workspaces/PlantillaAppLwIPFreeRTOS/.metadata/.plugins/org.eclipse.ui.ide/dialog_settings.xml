@@ -24,10 +24,11 @@
 		<item value="org.eclipse.rcp:4.5.1.v20150904-0015"/>
 	</list>
 	<section name="ExternalProjectImportWizard">
-		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/home/pato/Embebidos/tp"/>
 			<item value="/home/pato/Embebidos/TpFinal/Workspaces/PlantillaAppLwIPFreeRTOS"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
