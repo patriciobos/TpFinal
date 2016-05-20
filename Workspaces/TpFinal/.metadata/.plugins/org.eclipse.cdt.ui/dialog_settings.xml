@@ -20,6 +20,7 @@
 		<item value="false" key="caseSensitive"/>
 		<item value="227191" key="searchFlags"/>
 		<list key="previousPatterns">
+			<item value="TaskEXIT_CRITICAL"/>
 			<item value="http_index_html"/>
 			<item value="prt_ip"/>
 			<item value="newlib_stub"/>

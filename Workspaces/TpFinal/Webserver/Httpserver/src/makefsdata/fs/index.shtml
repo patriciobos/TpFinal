@@ -54,17 +54,17 @@
   </tr>
   <tr>
     <td>Actuador2</td>
-    <td><!--#act2"--></td>
+    <td><!--#act2--></td>
     <td><input type="submit" name="accion" id="actuador2" value="INICIAR" /></td>
   </tr>
   <tr>
     <td>Actuador3</td>
-    <td><!--#act3"--></td>
+    <td><!--#act3--></td>
     <td><input type="submit" name="accion" id="actuador3" value="INICIAR" /></td>
   </tr>
   <tr>
     <td>Actuador4</td>
-    <td><!--#act4"--></td>
+    <td><!--#act4--></td>
     <td><input type="submit" name="accion" id="actuador4" value="INICIAR" /></td>
   </tr>
 </table> 
