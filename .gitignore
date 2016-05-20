@@ -30,3 +30,10 @@
 
 # Debug files
 *.dSYM/
+
+# Mis archivos ignorados, ok?
+*.xmi
+*.mk
+*.axf
+*.map
+*.ld
