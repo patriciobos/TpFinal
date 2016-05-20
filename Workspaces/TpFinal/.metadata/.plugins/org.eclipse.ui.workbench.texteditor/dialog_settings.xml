@@ -8,6 +8,7 @@
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="LWIP_HTTPD_SSI"/>
 			<item value="malloc"/>
 			<item value="file__index_html"/>
 			<item value="INT"/>
@@ -15,7 +16,6 @@
 			<item value="uint16"/>
 			<item value="uint8"/>
 			<item value="CHAR"/>
-			<item value="ROM_OPTIONS"/>
 		</list>
 		<list key="replacehistory">
 			<item value="int"/>

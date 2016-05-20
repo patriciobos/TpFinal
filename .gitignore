@@ -44,3 +44,5 @@
 #eclipse
 .metadata
 Workspaces/TpFinal/.metadata/*
+
+*.*~

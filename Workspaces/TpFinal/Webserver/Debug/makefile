@@ -14,6 +14,7 @@ RM := rm -rf
 -include lwIP/src/arch/subdir.mk
 -include lwIP/src/api/subdir.mk
 -include freeRTOS/src/subdir.mk
+-include Httpserver/src/subdir.mk
 -include HAL/Chip/src/subdir.mk
 -include HAL/Board/src/subdir.mk
 -include HAL/Base/subdir.mk

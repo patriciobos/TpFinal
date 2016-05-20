@@ -98,7 +98,7 @@ lwIP/src/arch/lpc18xx_43xx_emac.o lwIP/src/arch/lpc18xx_43xx_emac.d: \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/Webserver/lwIP/inc/lwip/netif.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/Webserver/lwIP/inc/ipv4/lwip/ip.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/Webserver/lwIP/inc/netif/ppp_oe.h \
- /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/Webserver/Control/inc/lpc_18xx43xx_emac_config.h \
+ /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/Webserver/HAL/Board/inc/lpc_18xx43xx_emac_config.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/Webserver/lwIP/inc/arch/lpc18xx_43xx_emac.h \
  /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/Webserver/HAL/Board/inc/lpc_phy.h
 
@@ -298,7 +298,7 @@ lwIP/src/arch/lpc18xx_43xx_emac.o lwIP/src/arch/lpc18xx_43xx_emac.d: \
 
 /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/Webserver/lwIP/inc/netif/ppp_oe.h:
 
-/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/Webserver/Control/inc/lpc_18xx43xx_emac_config.h:
+/home/pato/Embebidos/TpFinal/Workspaces/TpFinal/Webserver/HAL/Board/inc/lpc_18xx43xx_emac_config.h:
 
 /home/pato/Embebidos/TpFinal/Workspaces/TpFinal/Webserver/lwIP/inc/arch/lpc18xx_43xx_emac.h:
 
