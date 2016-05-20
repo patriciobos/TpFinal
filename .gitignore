@@ -37,3 +37,10 @@
 *.axf
 *.map
 *.ld
+*.d
+*.tree
+*.snap
+
+#eclipse
+.metadata
+Workspaces/TpFinal/.metadata/*

@@ -109,13 +109,13 @@ static void vSetupIFTask (void *pvParameters)
 
 	/* Wait until the TCP/IP thread is finished before
 	   continuing or wierd things may happen */
-	LWIP_DEBUGF(LWIP_DBG_ON, ("Waiting for TCPIP thread to initialize...\n"));
+	DEBUGOUT("Waiting for TCPIP thread to initialize...\n");
 	tcpip_init(tcpip_init_done_signal, (void *) &tcpipdone);
 	while (!tcpipdone) {
 		msDelay(1);
 	}
 
-	LWIP_DEBUGF(LWIP_DBG_ON, ("Starting LWIP TCP echo server...\n"));
+	DEBUGOUT("Starting LWIP http-server...\r\n");
 
 	/* Static IP assignment */
 #if LWIP_DHCP
@@ -131,7 +131,7 @@ static void vSetupIFTask (void *pvParameters)
 	/* Add netif interface for lpc17xx_8x */
 	if (!netif_add(&lpc_netif, &ipaddr, &netmask, &gw, NULL, lpc_enetif_init,
 				   tcpip_input)) {
-		LWIP_ASSERT("Net interface failed to initialize\r\n", 0);
+		DEBUGOUT("Net interface failed to initialize\r\n");
 	}
 
 	netif_set_default(&lpc_netif);
@@ -146,9 +146,6 @@ static void vSetupIFTask (void *pvParameters)
 #endif
 
 	/* Initialize and start application */
-//	tcpecho_init();
-
-//	http_server_netconn_init();
 	httpd_init();
 
 	/* This loop monitors the PHY link and will handle cable events
@@ -192,7 +189,7 @@ static void vSetupIFTask (void *pvParameters)
 			DEBUGOUT("Link connect status: %d\r\n", ((physts & PHY_LINK_CONNECTED) != 0));
 
 			/* Delay for link detection (250mS) */
-			vTaskDelay(configTICK_RATE_HZ / 4);
+			msDelay(250);
 		}
 
 		/* Print IP address info */
@@ -203,9 +200,7 @@ static void vSetupIFTask (void *pvParameters)
 				DEBUGOUT("IP_ADDR    : %s\r\n", ipaddr_ntoa_r((const ip_addr_t *) &lpc_netif.ip_addr, tmp_buff, 16));
 				DEBUGOUT("NET_MASK   : %s\r\n", ipaddr_ntoa_r((const ip_addr_t *) &lpc_netif.netmask, tmp_buff, 16));
 				DEBUGOUT("GATEWAY_IP : %s\r\n", ipaddr_ntoa_r((const ip_addr_t *) &lpc_netif.gw, tmp_buff, 16));
-				// Ugly delay for clearing timing issues
-					uint32_t i;
-					for(i=0;i<0xFFFF;i++);
+
 				prt_ip = 1;
 			}
 		}

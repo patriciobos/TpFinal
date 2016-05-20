@@ -77,11 +77,8 @@ void Board_Debug_Init(void)
 	/* Enable UART Transmit */
 	Chip_UART_TXEnable(DEBUG_UART);
 
-	Board_UARTPutSTR("\r\nUART initialized.........[OK]\r\n");
-
-	// Ugly delay for clearing timing issues
-	uint32_t i;
-	for(i=0;i<0xFFF;i++);
+	/*UART init ok message*/
+	DEBUGOUT("\r\nUART initialized.........[OK]\r\n");
 
 #endif
 }
@@ -170,11 +167,12 @@ void Board_Ciaa_Gpios()
 	   Chip_GPIO_ClearValue(LPC_GPIO_PORT, 2,(1<<4)|(1<<5)|(1<<6));
 	   Chip_GPIO_ClearValue(LPC_GPIO_PORT, 5,(1<<1));
 
-	   Board_UARTPutSTR("Board GPIOs initialized..[OK]\r\n");
-
-	   // Ugly delay for clearing timing issues
-	   	uint32_t i;
-	   	for(i=0;i<0xFFF;i++);
+	   DEBUGOUT("Board GPIOs initialized..[OK]\r\n");
+//	   Board_UARTPutSTR("Board GPIOs initialized..[OK]\r\n");
+//
+//	   // Ugly delay for clearing timing issues
+//	   	uint32_t i;
+//	   	for(i=0;i<0xFFF;i++);
 
 }
 
@@ -234,22 +232,12 @@ void Board_Init(void)
 {
 
 	/* Sets up DEBUG UART */
-//	DEBUGINIT();
 	Board_Debug_Init();
 
 	/* Initializes GPIO */
-	Chip_GPIO_Init(LPC_GPIO_PORT);
+//	Chip_GPIO_Init(LPC_GPIO_PORT);
 
 	Board_Ciaa_Gpios();
-
-
-
-	/* Setup GPIOs for USB demos */
-//	Chip_SCU_PinMuxSet(0x2, 6, (SCU_MODE_PULLUP | SCU_MODE_INBUFF_EN | SCU_MODE_FUNC4));			/* P2_6 USB1_PWR_EN, USB1 VBus function */
-//	Chip_SCU_PinMuxSet(0x2, 5, (SCU_MODE_INACT | SCU_MODE_INBUFF_EN | SCU_MODE_ZIF_DIS | SCU_MODE_FUNC2));	/* P2_5 USB1_VBUS, MUST CONFIGURE THIS SIGNAL FOR USB1 NORMAL OPERATION */
-//	Chip_SCU_PinMuxSet(0x1, 7, (SCU_MODE_PULLUP | SCU_MODE_INBUFF_EN | SCU_MODE_FUNC4));			/* P1_7 USB0_PWR_EN, USB0 VBus function Xplorer */
-//	Chip_GPIO_SetPinDIROutput(LPC_GPIO_PORT, 5, 6);							/* GPIO5[6] = USB1_PWR_EN */
-//	Chip_GPIO_SetPinState(LPC_GPIO_PORT, 5, 6, true);							/* GPIO5[6] output high */
 
 	/* Initialize LEDs */
 //	Board_LED_Init();
