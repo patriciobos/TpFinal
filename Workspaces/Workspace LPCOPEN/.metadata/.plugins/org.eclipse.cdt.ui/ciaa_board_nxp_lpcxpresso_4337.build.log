@@ -1,7 +1,0 @@
-15:24:51 **** Clean-only build of configuration Debug for project ciaa_board_nxp_lpcxpresso_4337 ****
-make -r clean 
-rm -rf  ./src/board.o ./src/board_sysinit.o ./src/lcd_st7565s.o ./src/lpc_phy_smsc87x0.o ./src/wm8904.o  ./src/board.d ./src/board_sysinit.d ./src/lcd_st7565s.d ./src/lpc_phy_smsc87x0.d ./src/wm8904.d  libciaa_board_nxp_lpcxpresso_4337.a
- 
-
-15:24:51 Build Finished (took 407ms)
-

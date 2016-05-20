@@ -1,6 +1,0 @@
-17:15:55 **** Incremental Build of configuration Debug for project Acuario ****
-make -r all 
-make: No se hace nada para «all».
-
-17:15:55 Build Finished (took 108ms)
-
