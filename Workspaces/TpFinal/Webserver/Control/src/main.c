@@ -55,10 +55,14 @@
 
 /* ------------------------ Application includes -------------------------- */
 #include "httpd.h"
+#include "http_ssi.h"
 
 #if defined(lpc4337_m4)
 #include "ciaaIO.h"
 #endif
+
+ /* The SSI handler callback function passed to lwIP. */
+extern uint16_t SSIHandler( int iIndex, char *pcBuffer, int iBufferLength );
 
 /*****************************************************************************
  * Private types/enumerations/variables
@@ -144,6 +148,9 @@ static void vSetupIFTask (void *pvParameters)
 #if LWIP_DHCP
 	dhcp_start(&lpc_netif);
 #endif
+
+	/* Install the server side include handler. */
+	http_set_ssi_handler(SSIHandler, pccSSITags, sizeof( pccSSITags ) / sizeof( char * ) );
 
 	/* Initialize and start application */
 	httpd_init();

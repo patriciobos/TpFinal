@@ -133,6 +133,10 @@
 #define MEM_LIBC_MALLOC                 1
 #define MEMP_MEM_MALLOC                 1
 
+///*HTTPD definitions*/
+//#define LWIP_HTTPD_SSI					1
+//#define LWIP_HTTPD_CGI					0
+
 /* Needed for malloc/free */
 #include "FreeRTOS.h"
 #define malloc pvPortMalloc

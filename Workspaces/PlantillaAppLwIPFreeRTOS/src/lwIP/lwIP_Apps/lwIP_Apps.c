@@ -143,7 +143,7 @@ void lwIPAppsInit( void *pvArgument )
 	httpd_init();					//Servidor HTTP, con la API de eventos y callbacks
 
 	/* acelery */
-	InitBridgeTCP_UART();			//Bridge TCP->UART
+	InitBridgeTCP_UART();		//Bridge TCP->UART
 	InitServidorFrasesCelebres();	//Te contesta con una frase segun la letra que le mandes
 }
 /*-----------------------------------------------------------*/
