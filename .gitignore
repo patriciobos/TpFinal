@@ -1,48 +1,29 @@
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-
-# Mis archivos ignorados, ok?
-*.xmi
+#General build artifacts
 *.mk
+*.o
+*.a
+*.elf
+*.hex
 *.axf
-*.map
-*.ld
 *.d
-*.tree
-*.snap
+*.lst
+*.map
+*.plg
+*.lnp
+*.crf
+*.tra
+*.sct
+*.bak
+*.dep
 
-#eclipse
+#MDK-ARM
+*.__i
+*.htm
+*.uvgui.*
+*.uvopt
+*.axf
+
+#Eclipse
 .metadata
-Workspaces/TpFinal/.metadata/*
 
 *.*~
