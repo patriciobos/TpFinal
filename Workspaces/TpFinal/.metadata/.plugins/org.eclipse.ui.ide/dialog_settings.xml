@@ -28,6 +28,7 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/home/patricio/Embebidos/TpFinal/Workspaces/TpFinal"/>
 			<item value="/home/pato/Embebidos/TpFinal/Workspaces/TpFinal"/>
 			<item value="/home/pato/Embebidos/TpFinal/Workspaces/test"/>
 		</list>

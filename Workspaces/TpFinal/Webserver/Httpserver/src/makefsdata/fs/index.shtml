@@ -88,15 +88,15 @@
   </tr>
   <tr>
     <td>Temperatura</td>
-    <td><!--sensor1--></td>
+    <td><!--#sensor1--></td>
    </tr>
   <tr>
     <td>Nivel de Agua</td>
-    <td><!--sensor2--></td>
+    <td><!--#sensor2--></td>
    </tr>
   <tr>
     <td>pH</td>
-    <td><!--sensor3--></td>
+    <td><!--#sensor3--></td>
    </tr>
 </table> 
 
@@ -117,17 +117,17 @@
   </tr>
   <tr>
     <td>Temperatura</td>
-    <td><!--alarma1--></td>
+    <td><!--#alarma1--></td>
     <td><input type="checkbox" name="alarma1" value="0"></td>
   </tr>
   <tr>
     <td>Nivel de Agua</td>
-    <td><!--alarma2--></td>
+    <td><!--#alarma2--></td>
     <td><input type="checkbox" name="alarma2" value="0"></td>
   </tr>
   <tr>
     <td>pH</td>
-    <td><!--alarma3--></td>
+    <td><!--#alarma3--></td>
     <td><input type="checkbox" name="alarma3" value="0"></td>
   </tr>
 </table> 
