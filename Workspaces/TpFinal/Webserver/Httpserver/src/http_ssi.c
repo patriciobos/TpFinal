@@ -8,10 +8,10 @@
 
 #include "http_ssi.h"
 #include "httpd.h"
+//#include "actuators.h"
+
 #include "lpc_types.h"
 #include "string.h"
-
-
 
 
 uint16_t SSIHandler( int iIndex, char *pcBuffer, int iBufferLength )
@@ -23,23 +23,29 @@ uint16_t SSIHandler( int iIndex, char *pcBuffer, int iBufferLength )
 	/* The SSI handler function that generates text depending on the index of
 	the SSI tag encountered. */
 
+	char *ptrState;
+
 	switch( iIndex )
 	{
 
 	case ssiACT1_INDEX:
-		strcpy( pcBuffer, "state1" );
+		ptrState = getActuatorState(portNum_1);
+		strcpy( pcBuffer, ptrState );
 		break;
 
 	case ssiACT2_INDEX:
-		strcpy( pcBuffer, "state2" );
+		ptrState = getActuatorState(portNum_2);
+		strcpy( pcBuffer, ptrState );
 		break;
 
 	case ssiACT3_INDEX:
-		strcpy( pcBuffer, "state3" );
+		ptrState = getActuatorState(portNum_3);
+		strcpy( pcBuffer, ptrState );
 		break;
 
 	case ssiACT4_INDEX:
-		strcpy( pcBuffer, "state4" );
+		ptrState = getActuatorState(portNum_4);
+		strcpy( pcBuffer, ptrState );
 		break;
 
 	case ssiSENSOR1_INDEX:
@@ -55,15 +61,15 @@ uint16_t SSIHandler( int iIndex, char *pcBuffer, int iBufferLength )
 		break;
 
 	case ssiALARMA1_INDEX:
-		strcpy( pcBuffer, "alarm1" );
+		strcpy( pcBuffer, "Normal" );
 		break;
 
 	case ssiALARMA2_INDEX:
-		strcpy( pcBuffer, "alarm2" );
+		strcpy( pcBuffer, "Normal" );
 		break;
 
 	case ssiALARMA3_INDEX:
-		strcpy( pcBuffer, "alarm3" );
+		strcpy( pcBuffer, "Normal" );
 		break;
 
 	default:

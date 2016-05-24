@@ -9,6 +9,7 @@
 #define INC_HTTP_SSI_H_
 
 #include "lpc_types.h"
+#include "actuators.h"
 
 uint16_t SSIHandler( int iIndex, char *pcBuffer, int iBufferLength );
 

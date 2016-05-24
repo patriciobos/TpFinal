@@ -56,6 +56,7 @@
 /* ------------------------ Application includes -------------------------- */
 #include "httpd.h"
 #include "http_ssi.h"
+#include "http_cgi.h"
 
 #if defined(lpc4337_m4)
 #include "ciaaIO.h"
@@ -151,6 +152,8 @@ static void vSetupIFTask (void *pvParameters)
 
 	/* Install the server side include handler. */
 	http_set_ssi_handler(SSIHandler, pccSSITags, sizeof( pccSSITags ) / sizeof( char * ) );
+
+	CGIinit();
 
 	/* Initialize and start application */
 	httpd_init();

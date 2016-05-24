@@ -63,7 +63,7 @@
 #define CHECKSUM_CHECK_IP               1
 #define CHECKSUM_CHECK_UDP              1
 #define CHECKSUM_CHECK_TCP              1
-#define LWIP_CHECKSUM_ON_COPY           1
+#define LWIP_CHECKSUM_ON_COPY           0
 
 /* Use LWIP version of htonx() to allow generic functionality across
    all platforms. If you are using the Cortex Mx devices, you might

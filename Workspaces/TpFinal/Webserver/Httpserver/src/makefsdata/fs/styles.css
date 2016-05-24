@@ -8,6 +8,11 @@ body{
 /* Secciones del layout: div */
 /*---------------------------*/
 
+a:focus, a:active {
+    color: black;
+    background-color:red;
+}
+
 #header {
     background-color:black;
     color:white;

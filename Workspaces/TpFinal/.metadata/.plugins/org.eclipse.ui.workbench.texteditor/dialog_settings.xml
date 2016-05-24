@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="taskEXIT_CRITICAL" key="selection"/>
+		<item value="CGI" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="cgi"/>
 			<item value="TaskEXIT_CRITICAL"/>
 			<item value="TaskEXIT_CRITICAL();"/>
 			<item value="tSSIHandler"/>
@@ -15,7 +16,6 @@
 			<item value="malloc"/>
 			<item value="file__index_html"/>
 			<item value="INT"/>
-			<item value="uint32"/>
 		</list>
 		<list key="replacehistory">
 			<item value="int"/>
