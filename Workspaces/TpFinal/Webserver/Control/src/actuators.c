@@ -1,42 +1,75 @@
-
+/*----------------------------------------------------------*/
 /* Definición de variables globales para insertar en el HTML*/
+/*----------------------------------------------------------*/
 
 #include "actuators.h"
-//#include "board_api.h"
+#include "string.h"
 
+actuatorState_t actuatorState[4] = {OFF,OFF,ON,OFF};
 
-
-actuatorState_t actuatorState[4] = {ON,OFF,ON,OFF};
-
-const char estadoActuadorApagado[] = "APAGADO";
-const char estadoActuadorEncendido[] = "ENCENDIDO";
+//const char estadoActuadorApagado[] = "APAGADO";
+//const char estadoActuadorEncendido[] = "ENCENDIDO";
 
 char* getActuatorState(int portNum){
-//
+
 	char *ptrActuatorState;
 
-	if(actuatorState[portNum] == OFF)
-		return ptrActuatorState = (char *) estadoActuadorApagado;
+	if(OFF == actuatorState[portNum])
+		return ptrActuatorState = "APAGADO";	//(char *) estadoActuadorApagado;
 	else
-		return ptrActuatorState = (char *) estadoActuadorEncendido;
-//
-//	if (actuatorState(port) == OFF)
-//		return ptrActuatorState = estadoActuadorApagado;
-//	else
-//		return ptrActuatorState = estadoActuadorEncendido;
-//
+		return ptrActuatorState = "ENCENDIDO";	//(char *) estadoActuadorEncendido;
+
+}
+
+void toggleActuatorState(int portNum){
+
+	if( OFF == actuatorState[portNum])
+		actuatorState[portNum] = ON;
+
+	else if(ON == actuatorState[portNum])
+		actuatorState[portNum] = OFF;
+
 }
 
 const char *actuatorsHandler(int iIndex, int iNumParams, char *pcParam[], char *pcValue[]) {
 
-//	if( strcmp(pcParam[0], "state") == 0)
-//	{
-//		if( strcmp(pcValue[0], "on") == 0)
-//			IO004_SetPin(IO004_Handle0);
-//		else if ( strcmp(pcValue[0], "off") == 0)
-//			IO004_ResetPin(IO004_Handle0);
-//	}
-//	DEBUGOUT("actuarorsHandler has been called!\r\n");
+	if( strcmp(pcParam[0], "cmd1") == 0)
+	{
+		if( strcmp(pcValue[0], "INICIAR") == 0)
+			actuatorState[0] = ON;
+		else if ( strcmp(pcValue[0], "DETENER") == 0)
+			actuatorState[0] = OFF;
+	}
+
+	if( strcmp(pcParam[0], "cmd2") == 0)
+	{
+		if( strcmp(pcValue[0], "INICIAR") == 0)
+			actuatorState[1] = ON;
+		else if ( strcmp(pcValue[0], "DETENER") == 0)
+			actuatorState[1] = OFF;
+	}
+
+	if( strcmp(pcParam[0], "cmd3") == 0)
+	{
+		if( strcmp(pcValue[0], "INICIAR") == 0)
+			actuatorState[2] = ON;
+		else if ( strcmp(pcValue[0], "DETENER") == 0)
+			actuatorState[2] = OFF;
+	}
+
+	if( strcmp(pcParam[0], "cmd4") == 0)
+	{
+		if( strcmp(pcValue[0], "INICIAR") == 0)
+			actuatorState[3] = ON;
+		else if ( strcmp(pcValue[0], "DETENER") == 0)
+			actuatorState[3] = OFF;
+	}
 
 	return "/index.shtml";
+}
+
+
+const char *AJAXHandler(int iIndex, int iNumParams, char *pcParam[], char *pcValue[]) {
+
+	return "/404.html";
 }

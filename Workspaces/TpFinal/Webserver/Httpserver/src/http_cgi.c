@@ -12,14 +12,23 @@
 
 #include "board_api.h"
 
-tCGI cgi_handler;
+tCGI cgi_handlers[]={
+		{"/actuadores.cgi",actuatorsHandler},
+		{"/testAJAX.cgi",AJAXHandler},
+};
+tCGI * ptrCGIHandlers;
 
 
 //Initialise cgi environment
 int CGIinit( void) {
-	cgi_handler.pcCGIName = "/actuadores.cgi";
-	cgi_handler.pfnCGIHandler = actuatorsHandler;
-	http_set_cgi_handlers(&cgi_handler, 1);
+
+//	cgi_handler.pcCGIName = "/actuadores.cgi";
+//
+//	cgi_handler.pfnCGIHandler = actuatorsHandler;
+
+	http_set_cgi_handlers(cgi_handlers, 2);
+
 	DEBUGOUT("httpCGIHandler initialized............[OK]\r\n");
+
 	return 0;
 }

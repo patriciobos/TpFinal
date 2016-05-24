@@ -16,8 +16,12 @@ enum {portNum_1 = 0,
 	  portNum_4
 };
 
-const char *actuatorsHandler(int iIndex, int iNumParams, char *pcParam[], char *pcValue[]);
 
 char* getActuatorState(int portNum);
+
+void toggleActuatorState(int portNum);
+
+const char *actuatorsHandler(int iIndex, int iNumParams, char *pcParam[], char *pcValue[]);
+const char *AJAXHandler(int iIndex, int iNumParams, char *pcParam[], char *pcValue[]);
 
 #endif /* INC_ACTUATORS_H_ */

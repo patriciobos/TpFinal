@@ -51,23 +51,23 @@
   </tr>
   <tr>
     <td>Actuador1</td>
-    <td id="state1">ENCENDIDO<!--#act1--></td>
-    <td><input type="submit" name="accion" id="actuador1" value="INICIAR" /></td>
+    <td id="state1"><!--#act1--></td>
+    <td><input type="submit" name="cmd1" id="actuador1" value="INICIAR" onclick="testAJAX()"/></td>
   </tr>
   <tr>
     <td>Actuador2</td>
-    <td id="state2">APAGADO<!--#act2--></td>
-    <td><input type="submit" name="accion" id="actuador2" value="INICIAR" /></td>
+    <td id="state2"><!--#act2--></td>
+    <td><input type="submit" name="cmd2" id="actuador2" value="INICIAR" onclick="changeBottonText(this)"/></td>
   </tr>
   <tr>
     <td>Actuador3</td>
     <td id="state3"><!--#act3--></td>
-    <td><input type="submit" name="accion" id="actuador3" value="INICIAR" /></td>
+    <td><input type="submit" name="cmd3" id="actuador3" value="INICIAR" onclick="changeBottonText(this)"/></td>
   </tr>
   <tr>
     <td>Actuador4</td>
     <td id="state4"><!--#act4--></td>
-    <td><input type="submit" name="accion" id="actuador4" value="INICIAR" /></td>
+    <td><input type="submit" name="cmd4" id="actuador4" value="INICIAR" onclick="changeBottonText(this)"/></td>
   </tr>
 </table> 
 
