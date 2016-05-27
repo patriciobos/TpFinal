@@ -5,7 +5,7 @@
 #include "actuators.h"
 #include "string.h"
 
-actuatorState_t actuatorState[4] = {OFF,OFF,ON,OFF};
+actuatorState_t actuatorState[4] = {OFF,OFF,OFF,OFF};
 
 //const char estadoActuadorApagado[] = "APAGADO";
 //const char estadoActuadorEncendido[] = "ENCENDIDO";
@@ -71,5 +71,8 @@ const char *actuatorsHandler(int iIndex, int iNumParams, char *pcParam[], char *
 
 const char *AJAXHandler(int iIndex, int iNumParams, char *pcParam[], char *pcValue[]) {
 
-	return "/404.html";
+
+	char *ptrState = getActuatorState(portNum_1);
+
+	return ptrState;
 }

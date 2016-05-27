@@ -22,10 +22,11 @@
 </div>
 
 <div id="nav">
-<a href="indexoverview.shtml">Overview</a><br>
-<a href="indexcontrol.shtml">Control</a><br>
-<a href="indexconfig.shtml">Config</a><br>
-
+  <ul>
+    <li><a id="menu1" class="active" href="index.shtml" onclick=changebuttonClasses(this) >Overview</a></li>
+    <li><a id="menu2" href="#index.shtml" onclick=changebuttonClasses(this) >Control</a></li>
+    <li><a id="menu3" href="#index.shtml" onclick=changebuttonClasses(this) >Config</a></li>
+  </ul>
 </div>
 
 <!-- ------------------------------------------------------------------------------------ -->
@@ -51,25 +52,25 @@
   </tr>
   <tr>
     <td>Actuador1</td>
-    <td id="state1"><!--#act1--></td>
-    <td><input type="submit" name="cmd1" id="actuador1" value="INICIAR" onclick="testAJAX()"/></td>
+    <td id="state1" class="actuadorApagado" ><!--act1--></td>
+    <td><input type="submit" name="cmd1" id="actuador1" class="button5" value="DETENER" onclick="changeBottonText(this)"/></td>
   </tr>
   <tr>
     <td>Actuador2</td>
-    <td id="state2"><!--#act2--></td>
-    <td><input type="submit" name="cmd2" id="actuador2" value="INICIAR" onclick="changeBottonText(this)"/></td>
+    <td id="state2" class="actuadorApagado"><!--act2--></td>
+    <td><input type="submit" name="cmd2" id="actuador2" class="button5" value="INICIAR" onclick="changeBottonText(this)"/></td>
   </tr>
   <tr>
     <td>Actuador3</td>
-    <td id="state3"><!--#act3--></td>
-    <td><input type="submit" name="cmd3" id="actuador3" value="INICIAR" onclick="changeBottonText(this)"/></td>
+    <td id="state3" class="actuadorApagado"><!--act3--></td>
+    <td><input type="submit" name="cmd3" id="actuador3" class="button5" value="INICIAR" onclick="changeBottonText(this)"/></td>
   </tr>
   <tr>
     <td>Actuador4</td>
-    <td id="state4"><!--#act4--></td>
-    <td><input type="submit" name="cmd4" id="actuador4" value="INICIAR" onclick="changeBottonText(this)"/></td>
+    <td id="state4" class="actuadorApagado"><!--act4--></td>
+    <td><input type="submit" name="cmd4" id="actuador4" class="button5" value="INICIAR" onclick="changeBottonText(this)"/></td>
   </tr>
-</table> 
+</table>
 
 </form>
 
@@ -90,17 +91,17 @@
   </tr>
   <tr>
     <td>Temperatura</td>
-    <td><!--#sensor1--></td>
+    <td id= "sensor1" ><!--sensor1--></td>
    </tr>
   <tr>
     <td>Nivel de Agua</td>
-    <td><!--#sensor2--></td>
+    <td id= "sensor2" ><!--sensor2--></td>
    </tr>
   <tr>
     <td>pH</td>
-    <td><!--#sensor3--></td>
+    <td id= "sensor3" ><!--sensor3--></td>
    </tr>
-</table> 
+</table>
 
 </div>
 
@@ -109,7 +110,7 @@
 <!-- ------------------------------------------------------------------------------------ -->
 
 <div id="div_alarmas" class="inner">
-<h2 style=text-align:"left">ALARMAS</h2>
+<h2>ALARMAS</h2>
 
 <table id="tabla_alarmas" class="actuadores">
   <tr>
@@ -119,20 +120,20 @@
   </tr>
   <tr>
     <td>Temperatura</td>
-    <td><!--#alarma1--></td>
+    <td id="alarm1"><!--alarma1--></td>
     <td><input type="checkbox" name="alarma1" value="0"></td>
   </tr>
   <tr>
     <td>Nivel de Agua</td>
-    <td><!--#alarma2--></td>
+    <td id="alarm2"><!--alarma2--></td>
     <td><input type="checkbox" name="alarma2" value="0"></td>
   </tr>
   <tr>
     <td>pH</td>
-    <td><!--#alarma3--></td>
+    <td id="alarm3"><!--alarma3--></td>
     <td><input type="checkbox" name="alarma3" value="0"></td>
   </tr>
-</table> 
+</table>
 
 </div>
 </div>
