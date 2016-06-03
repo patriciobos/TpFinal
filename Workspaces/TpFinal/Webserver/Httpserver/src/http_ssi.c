@@ -25,9 +25,9 @@ uint16_t SSIHandler( int iIndex, char *pcBuffer, int iBufferLength )
 
 	char *ptrState;
 
-	static uint8_t debugInt1 = 10;
-	static uint8_t debugInt2 = 20;
-	static uint8_t debugInt3 = 30;
+	static uint8_t debugInt1 = 0;
+	static uint8_t debugInt2 = 10;
+	static uint8_t debugInt3 = 100;
 
 	switch( iIndex )
 	{

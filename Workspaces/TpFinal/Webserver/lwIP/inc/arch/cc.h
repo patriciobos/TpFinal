@@ -34,6 +34,8 @@
 
 #include <stdint.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <stdarg.h>
 
 /** @ingroup NET_LWIP_ARCH
  * @{
@@ -103,21 +105,13 @@ typedef uintptr_t          mem_ptr_t;
  * @note	This function will display an error message on an assertion
  * to the debug output.
  */
-void assert_printf(char *msg, int line, char *file);
-
+void assert_loop(void);
 /* Plaform specific diagnostic output */
-//#define LWIP_PLATFORM_DIAG(vars) printf vars
-
-#define LWIP_PLATFORM_DIAG(vars) { \
-char msg_lwip[64]; \
-sprintf(msg_lwip,(const char *) vars); \
-Board_UARTPutSTR(msg_lwip); \
-}
-
-//#define LWIP_PLATFORM_DIAG(vars) Board_UARTPutSTR((const char *) vars)
+#define LWIP_PLATFORM_DIAG(X) myprintf X
 
 
-#define LWIP_PLATFORM_ASSERT(flag) { assert_printf((flag), __LINE__, __FILE__); }
+#define LWIP_PLATFORM_ASSERT(flag) { assert_loop(); }
+//#define LWIP_PLATFORM_ASSERT(flag) { assert_printf((flag), __LINE__, __FILE__); }
 #else
 
 /**

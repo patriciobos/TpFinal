@@ -78,7 +78,7 @@
 #endif
 
 /* Raw interface not needed */
-#define LWIP_RAW                        0
+#define LWIP_RAW                        1
 
 /* DHCP is ok, UDP is required with DHCP */
 #define LWIP_DHCP                       0
@@ -94,10 +94,10 @@
 #define TCP_SND_BUF                     (2 * TCP_MSS)
 
 #define LWIP_SOCKET                     0
-#define LWIP_NETCONN                    1
+#define LWIP_NETCONN                    0
 #define MEMP_NUM_SYS_TIMEOUT            300
 
-#define LWIP_STATS                      0
+#define LWIP_STATS                      1
 #define LINK_STATS                      0
 #define LWIP_STATS_DISPLAY              0
 
@@ -106,7 +106,7 @@
    building the code to use debug. */
 #define TCP_DEBUG                       LWIP_DBG_OFF
 #define ETHARP_DEBUG                    LWIP_DBG_OFF
-#define PBUF_DEBUG                      LWIP_DBG_OFF
+#define PBUF_DEBUG                      LWIP_DBG_ON
 #define IP_DEBUG                        LWIP_DBG_OFF
 #define TCPIP_DEBUG                     LWIP_DBG_OFF
 #define DHCP_DEBUG                      LWIP_DBG_OFF
@@ -126,16 +126,12 @@
 /* TCPIP thread must run at higher priority than MAC threads! */
 #define TCPIP_THREAD_PRIO               (DEFAULT_THREAD_PRIO + configMAX_PRIORITIES - 1)
 
-#define TCPIP_THREAD_STACKSIZE          (512)
+#define TCPIP_THREAD_STACKSIZE          (1024)
 
 #define TCPIP_MBOX_SIZE                 6
 
 #define MEM_LIBC_MALLOC                 1
 #define MEMP_MEM_MALLOC                 1
-
-///*HTTPD definitions*/
-//#define LWIP_HTTPD_SSI					1
-//#define LWIP_HTTPD_CGI					0
 
 /* Needed for malloc/free */
 #include "FreeRTOS.h"

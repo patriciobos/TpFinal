@@ -103,11 +103,16 @@ typedef uintptr_t          mem_ptr_t;
  * @note	This function will display an error message on an assertion
  * to the debug output.
  */
-void assert_printf(char *msg, int line, char *file);
-
+//void assert_printf(char *msg, int line, char *file);
+void assert_loop(void);
 /* Plaform specific diagnostic output */
-#define LWIP_PLATFORM_DIAG(vars) printf vars
-#define LWIP_PLATFORM_ASSERT(flag) { assert_printf((flag), __LINE__, __FILE__); }
+#define LWIP_PLATFORM_DIAG(...) { \
+char msg_aux[64]; \
+sprintf(msg_aux,__VA_ARGS__); \
+Board_UARTPutSTR(msg_aux); \
+}
+#define LWIP_PLATFORM_ASSERT(flag) { assert_loop(); }
+//#define LWIP_PLATFORM_ASSERT(flag) { assert_printf((flag), __LINE__, __FILE__); }
 #else
 
 /**

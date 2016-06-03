@@ -54,6 +54,21 @@
 /*****************************************************************************
  * Public functions
  ****************************************************************************/
+int myprintf( const char* format, ... )
+{ char buffer[1024];
+int result;
+va_list arglist;
+va_start( arglist, format);
+//result = vsprintf( buffer, format, arglist);
+vsprintf( buffer, format, arglist);
+va_end( arglist);
+return result;
+}
+
+void assert_loop(void)
+{
+	while (1) {}
+}
 
 /* Displays an error message on assertion */
 void assert_printf(char *msg, int line, char *file)

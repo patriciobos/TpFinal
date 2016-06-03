@@ -121,7 +121,7 @@ static void vSetupIFTask(void *pvParameters)
 	IP4_ADDR(&netmask, 0, 0, 0, 0);
 #else
 	IP4_ADDR(&gw, 192, 168, 200, 1);
-	IP4_ADDR(&ipaddr, 192, 168, 200, 91);
+	IP4_ADDR(&ipaddr, 192, 168, 200, 99);
 	IP4_ADDR(&netmask, 255, 255, 255, 0);
 #endif
 
@@ -145,7 +145,7 @@ static void vSetupIFTask(void *pvParameters)
 #endif
 
 	/* Initialize and start application */
-	http_server_netconn_init();
+	//http_server_netconn_init();
 
 	/* This loop monitors the PHY link and will handle cable events
 	   via the PHY driver. */
@@ -196,8 +196,6 @@ static void vSetupIFTask(void *pvParameters)
 /*****************************************************************************
  * Public functions
  ****************************************************************************/
-
-extern void lcd_update_hostip(uint32_t host_ip);
 
 /**
  * @brief	Delay function
