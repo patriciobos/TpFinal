@@ -29,6 +29,8 @@
  * this code.
  */
 
+#include <stdio.h>
+#include <stdarg.h>
 #include "lwip/opt.h"
 
 /** @defgroup NET_LWIP_DEBUG LWIP debug re-direction
@@ -54,21 +56,30 @@
 /*****************************************************************************
  * Public functions
  ****************************************************************************/
-int myprintf( const char* format, ... )
-{ char buffer[1024];
-int result;
-va_list arglist;
-va_start( arglist, format);
-//result = vsprintf( buffer, format, arglist);
-vsprintf( buffer, format, arglist);
-va_end( arglist);
-return result;
+void
+my_sys_assert( const char *msg )
+{
+    char tmpbuf[256];
+    sprintf(tmpbuf,msg);
+//    SCI2_PullString(tmpbuf);
+    Board_UARTPutSTR(tmpbuf);
 }
 
-void assert_loop(void)
+void
+sys_debug( const char *const fmt, ... )
 {
-	while (1) {}
+    va_list args;
+    char tmpbuf[256];
+
+    va_start( args, fmt );
+    vsprintf(tmpbuf, fmt, args);
+    va_end( args );
+
+//    SCI2_PullString(tmpbuf);
+    Board_UARTPutSTR(tmpbuf);
 }
+
+
 
 /* Displays an error message on assertion */
 void assert_printf(char *msg, int line, char *file)
