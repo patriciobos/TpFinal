@@ -8,7 +8,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -34,7 +34,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -60,7 +60,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -86,7 +86,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -112,7 +112,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -138,7 +138,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -164,7 +164,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -190,7 +190,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -216,7 +216,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -242,7 +242,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -268,7 +268,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -294,7 +294,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -320,7 +320,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -346,7 +346,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -372,7 +372,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -398,7 +398,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -424,7 +424,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -450,7 +450,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -476,7 +476,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -502,7 +502,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -528,7 +528,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -554,7 +554,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -580,7 +580,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -606,7 +606,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -632,7 +632,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -658,7 +658,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -684,7 +684,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -710,7 +710,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -736,7 +736,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -762,7 +762,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -788,7 +788,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -814,7 +814,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -840,7 +840,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -866,7 +866,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -892,7 +892,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -918,7 +918,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -944,7 +944,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -970,7 +970,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -996,7 +996,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -1022,7 +1022,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -1048,7 +1048,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -1074,7 +1074,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -1100,7 +1100,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -1126,7 +1126,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -1152,7 +1152,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -1178,7 +1178,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -1204,7 +1204,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -1230,7 +1230,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -1256,7 +1256,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -1282,7 +1282,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">
@@ -1308,7 +1308,7 @@
 						<entry kind="includePath" name="/lpc_chip_43xx/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/ciaa_board_nxp_lpcxpresso_4337/inc">
+						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_4337/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/${ProjName}/example/inc">

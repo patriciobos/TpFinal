@@ -82,7 +82,7 @@
 
 /* DHCP is ok, UDP is required with DHCP */
 #define LWIP_DHCP                       0
-#define LWIP_UDP                        1
+#define LWIP_UDP                        0
 
 /* Hostname can be used */
 #define LWIP_NETIF_HOSTNAME             1
@@ -97,7 +97,7 @@
 #define LWIP_NETCONN                    0
 #define MEMP_NUM_SYS_TIMEOUT            300
 
-#define LWIP_STATS                      1
+#define LWIP_STATS                      0
 #define LINK_STATS                      0
 #define LWIP_STATS_DISPLAY              0
 
@@ -106,7 +106,7 @@
    building the code to use debug. */
 #define TCP_DEBUG                       LWIP_DBG_OFF
 #define ETHARP_DEBUG                    LWIP_DBG_OFF
-#define PBUF_DEBUG                      LWIP_DBG_ON
+#define PBUF_DEBUG                      LWIP_DBG_OFF
 #define IP_DEBUG                        LWIP_DBG_OFF
 #define TCPIP_DEBUG                     LWIP_DBG_OFF
 #define DHCP_DEBUG                      LWIP_DBG_OFF
@@ -117,7 +117,7 @@
 #define EMAC_DEBUG                    LWIP_DBG_OFF
 
 #define DEFAULT_THREAD_PRIO             (tskIDLE_PRIORITY + 1)
-#define DEFAULT_THREAD_STACKSIZE        (512)
+#define DEFAULT_THREAD_STACKSIZE        (128)
 #define DEFAULT_ACCEPTMBOX_SIZE         6
 #define DEFAULT_ACCEPTMBOX_SIZE         6
 #define DEFAULT_TCP_RECVMBOX_SIZE       6
@@ -126,7 +126,7 @@
 /* TCPIP thread must run at higher priority than MAC threads! */
 #define TCPIP_THREAD_PRIO               (DEFAULT_THREAD_PRIO + configMAX_PRIORITIES - 1)
 
-#define TCPIP_THREAD_STACKSIZE          (1024)
+#define TCPIP_THREAD_STACKSIZE          (256)
 
 #define TCPIP_MBOX_SIZE                 6
 

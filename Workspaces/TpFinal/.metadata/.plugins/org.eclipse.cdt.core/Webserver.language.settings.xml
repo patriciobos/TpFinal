@@ -3019,6 +3019,7 @@
 						</entry>
 						<entry kind="macro" name="CORE_M4" value=""/>
 						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="LWIP_DEBUG" value=""/>
 						<entry kind="macro" name="__CODE_RED" value=""/>
 						<entry kind="macro" name="__LPC43XX__" value=""/>
 						<entry kind="macro" name="__MULTICORE_NONE" value=""/>

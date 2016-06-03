@@ -59,7 +59,7 @@
 void
 my_sys_assert( const char *msg )
 {
-    char tmpbuf[256];
+    char tmpbuf[64];
     sprintf(tmpbuf,msg);
 //    SCI2_PullString(tmpbuf);
     Board_UARTPutSTR(tmpbuf);
@@ -69,7 +69,7 @@ void
 sys_debug( const char *const fmt, ... )
 {
     va_list args;
-    char tmpbuf[256];
+    char tmpbuf[64];
 
     va_start( args, fmt );
     vsprintf(tmpbuf, fmt, args);
