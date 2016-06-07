@@ -38,7 +38,7 @@
 <!-- ACTUADORES -->
 <!-- ------------------------------------------------------------------------------------ -->
 
-<div id="div_actuadores" class="inner">
+<div id="div_actuadores" class="inner_actuadores">
 
 <h2>ACTUADORES</h2>
 
@@ -51,23 +51,23 @@
     <th>Control</th>
   </tr>
   <tr>
-    <td>Actuador1</td>
-    <td id="state1" class="actuadorApagado" ><!--act1--></td>
+    <td>Bomba de Agua <br />ENTRADA</td>
+    <td id="state1" class="rojo" ><!--act1--></td>
     <td><input type="submit" name="cmd1" id="actuador1" class="button5" value="DETENER" onclick="changeBottonText(this)"/></td>
   </tr>
   <tr>
-    <td>Actuador2</td>
-    <td id="state2" class="actuadorApagado"><!--act2--></td>
+    <td>Bomba de Agua <br />SALIDA</td>
+    <td id="state2" class="rojo"><!--act2--></td>
     <td><input type="submit" name="cmd2" id="actuador2" class="button5" value="INICIAR" onclick="changeBottonText(this)"/></td>
   </tr>
   <tr>
-    <td>Actuador3</td>
-    <td id="state3" class="actuadorApagado"><!--act3--></td>
+    <td>ILUMINACIÓN</td>
+    <td id="state3" class="rojo"><!--act3--></td>
     <td><input type="submit" name="cmd3" id="actuador3" class="button5" value="INICIAR" onclick="changeBottonText(this)"/></td>
   </tr>
   <tr>
-    <td>Actuador4</td>
-    <td id="state4" class="actuadorApagado"><!--act4--></td>
+    <td>CALEFACTOR</td>
+    <td id="state4" class="rojo"><!--act4--></td>
     <td><input type="submit" name="cmd4" id="actuador4" class="button5" value="INICIAR" onclick="changeBottonText(this)"/></td>
   </tr>
 </table>
@@ -90,17 +90,18 @@
     <th>Valor</th>
   </tr>
   <tr>
-    <td>Temperatura</td>
-    <td id= "sensor1" ><!--sensor1--></td>
-   </tr>
-  <tr>
     <td>Nivel de Agua</td>
+    <td id= "sensor1" ><!--sensor1--></td>
+  </tr>
+  <tr>
+    <td>Temperatura</td>
     <td id= "sensor2" ><!--sensor2--></td>
-   </tr>
+  </tr>
   <tr>
     <td>pH</td>
     <td id= "sensor3" ><!--sensor3--></td>
-   </tr>
+  </tr>
+
 </table>
 
 </div>
@@ -109,7 +110,7 @@
 <!-- ALARMAS -->
 <!-- ------------------------------------------------------------------------------------ -->
 
-<div id="div_alarmas" class="inner">
+<div id="div_alarmas" class="inner_alarmas">
 <h2>ALARMAS</h2>
 
 <table id="tabla_alarmas" class="actuadores">
@@ -119,19 +120,24 @@
     <th>Deshabilitar</th>
   </tr>
   <tr>
-    <td>Temperatura</td>
-    <td id="alarm1"><!--alarma1--></td>
+    <td>Nivel de Agua <br /> ALTO</td>
+    <td id="alarm1" clase="alarmaVerde"><!--alarma1--></td>
     <td><input type="checkbox" name="alarma1" value="0"></td>
   </tr>
   <tr>
-    <td>Nivel de Agua</td>
-    <td id="alarm2"><!--alarma2--></td>
+    <td>Nivel de Agua <br /> BAJO</td>
+    <td id="alarm2" clase="alarmaVerde"><!--alarma2--></td>
     <td><input type="checkbox" name="alarma2" value="0"></td>
   </tr>
   <tr>
-    <td>pH</td>
-    <td id="alarm3"><!--alarma3--></td>
+    <td>Temperatura</td>
+    <td id="alarm3" clase="alarmaVerde"><!--alarma3--></td>
     <td><input type="checkbox" name="alarma3" value="0"></td>
+  </tr>
+  <tr>
+    <td>pH</td>
+    <td id="alarm4" clase="alarmaVerde"><!--alarma4--></td>
+    <td><input type="checkbox" name="alarma4" value="0"></td>
   </tr>
 </table>
 

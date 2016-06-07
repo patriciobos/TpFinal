@@ -9,6 +9,7 @@
 #include "http_ssi.h"
 #include "httpd.h"
 //#include "actuators.h"
+#include "alarms.h"
 
 #include "lpc_types.h"
 #include "string.h"
@@ -26,7 +27,7 @@ uint16_t SSIHandler( int iIndex, char *pcBuffer, int iBufferLength )
 	char *ptrState;
 
 	static uint8_t debugInt1 = 0;
-	static uint8_t debugInt2 = 10;
+	static uint8_t debugInt2 = 100;
 	static uint8_t debugInt3 = 100;
 
 	switch( iIndex )
@@ -71,19 +72,27 @@ uint16_t SSIHandler( int iIndex, char *pcBuffer, int iBufferLength )
 		break;
 
 	case ssiALARMA1_INDEX:
-		strcpy( pcBuffer, "Normal" );
+		ptrState = getAlarmState(alarmNum_1);
+		strcpy( pcBuffer, ptrState );
 		break;
 
 	case ssiALARMA2_INDEX:
-		strcpy( pcBuffer, "Normal" );
+		ptrState = getAlarmState(alarmNum_1);
+		strcpy( pcBuffer, ptrState );
 		break;
 
 	case ssiALARMA3_INDEX:
-		strcpy( pcBuffer, "Normal" );
+		ptrState = getAlarmState(alarmNum_1);
+		strcpy( pcBuffer, ptrState );
+		break;
+
+	case ssiALARMA4_INDEX:
+		ptrState = getAlarmState(alarmNum_1);
+		strcpy( pcBuffer, ptrState );
 		break;
 
 	default:
-		strcpy( pcBuffer, "Hola" );
+		strcpy( pcBuffer, "Error" );
 		break;
 	}
 

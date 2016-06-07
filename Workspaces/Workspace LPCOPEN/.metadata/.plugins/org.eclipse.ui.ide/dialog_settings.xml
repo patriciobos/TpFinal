@@ -28,8 +28,8 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
-			<item value="/home/pato/Embebidos/TpFinal/Workspaces/Workspace LPCOPEN/ciaa_board_nxp_lpcxpresso_4337"/>
 			<item value="/home/pato/Embebidos/TpFinal/Workspaces/Workspace LPCOPEN"/>
+			<item value="/home/pato/Embebidos/TpFinal/Workspaces/Workspace LPCOPEN/ciaa_board_nxp_lpcxpresso_4337"/>
 			<item value=""/>
 			<item value="/home/patricio/Embebidos/tpfinal/Workspace"/>
 		</list>

@@ -75,6 +75,7 @@ static struct netif lpc_netif;
 /*****************************************************************************
  * Public types/enumerations/variables
  ****************************************************************************/
+typedef enum state {OFF = 0, ON = !OFF} state_t;
 
 /*****************************************************************************
  * Private functions
@@ -114,13 +115,13 @@ static void vSetupIFTask (void *pvParameters)
 
 	/* Wait until the TCP/IP thread is finished before
 	   continuing or wierd things may happen */
-	DEBUGOUT("Waiting for TCPIP thread to initialize...\n");
+	DEBUGSTR("Waiting for TCPIP thread to initialize...\n");
 	tcpip_init(tcpip_init_done_signal, (void *) &tcpipdone);
 	while (!tcpipdone) {
 		msDelay(1);
 	}
 
-	DEBUGOUT("Starting LWIP http-server...\r\n");
+	DEBUGSTR("Starting LWIP http-server...\r\n");
 
 	/* Static IP assignment */
 #if LWIP_DHCP
@@ -136,7 +137,7 @@ static void vSetupIFTask (void *pvParameters)
 	/* Add netif interface for lpc17xx_8x */
 	if (!netif_add(&lpc_netif, &ipaddr, &netmask, &gw, NULL, lpc_enetif_init,
 				   tcpip_input)) {
-		DEBUGOUT("Net interface failed to initialize\r\n");
+		DEBUGSTR("Net interface failed to initialize\r\n");
 	}
 
 	netif_set_default(&lpc_netif);
@@ -157,6 +158,10 @@ static void vSetupIFTask (void *pvParameters)
 
 	/* Initialize and start application */
 	httpd_init();
+
+	const char inst1[] = "LPC18xx/43xx UART example using ring buffers\r\n";
+	/* Send initial messages */
+	Chip_UART_SendRB(DEBUG_UART, &txring, inst1, sizeof(inst1) - 1);
 
 	/* This loop monitors the PHY link and will handle cable events
 	   via the PHY driver. */

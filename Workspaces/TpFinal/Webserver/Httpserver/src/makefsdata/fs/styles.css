@@ -31,22 +31,29 @@ div.outer{
     margin: 0 auto;
 }
 
-div.inner {
+div.inner_actuadores {
     background-color:#eeeeee;
-    width: 20%;
+    width: 33%;
     margin: 0 auto;
     display:inline-block;
-    width: 30%;
     text-align:left;
     padding:10px;
 
 }
 div.inner_sensores {
     background-color:#eeeeee;
-    width: 15%;
+    width: 20%;
     margin: 0 auto;
     display:inline-block;
-    width:300px;
+    text-align:left;
+    padding:10px;
+}
+
+div.inner_alarmas {
+   background-color:#eeeeee;
+    width: 27%;
+    margin: 0 auto;
+    display:inline-block;
     text-align:left;
     padding:10px;
 }
@@ -87,22 +94,44 @@ table.actuadores td {
     height: 25px;
 }
 
-table td.actuadorEncendido {
+table td.actuadorVerde {
     padding: 15px;
     text-align: center;
-    height: 25px;
+    height: 2.5em;
+    width:9em;
     background-color:green;
     color:white;
 
 }
 
-table td.actuadorApagado {
+table td.actuadorRojo {
     padding: 15px;
     text-align: center;
-    height: 25px;
+    height: 2.5em;
+    width:9em;
     background-color:red;
     color:black;
 }
+
+table td.alarmaVerde {
+    padding: 15px;
+    text-align: center;
+    height: 2.5em;
+    width:6em;
+    background-color:green;
+    color:white;
+
+}
+
+table td.alarmaRojo {
+    padding: 15px;
+    text-align: center;
+    height: 2.5em;
+    width:6em;
+    background-color:red;
+    color:black;
+}
+
 
 /*------------------------------*/
 /*  Table class sensores	*/
@@ -112,13 +141,13 @@ table.sensores th {
     background-color:#eeeeee;
     color:black;
     padding: 10px;
-    text-align: left;
+    text-align: center;
     height: 20px;
 }
 
 table.sensores td {
     padding: 15px;
-    text-align: left;
+    text-align: center;
     height: 25px;
 }
 

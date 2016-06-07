@@ -3,7 +3,7 @@ window.onload = loop;
 var data_received = 0;
 
 function loop1(){
-setTimeout(alertFunc(), 1000);
+setTimeout(alertFunc(), 2000);
 }
 
 function alertFunc (){
@@ -47,8 +47,8 @@ function alertContents(http_request){
       data_received = 0;
     }
     else{
-      alert('There was a problem with the AJAX request.');
-      alert( "Request status = " + http_request.status );
+      alert("There was a problem with the AJAX request.\n\r \
+           Request status = " + http_request.status );
     }
   }
 }
@@ -62,53 +62,87 @@ function parse_vars( data ){
 
   if ( parsed[0] == "<!--#act1-->ENCENDIDO" ) {
     document.getElementById("actuador1").value = "DETENER";
-    document.getElementById("state1").className = "actuadorEncendido";
+    document.getElementById("state1").className = "actuadorVerde";
   }
   else {
     document.getElementById("actuador1").value = "INICIAR";
-    document.getElementById("state1").className = "actuadorApagado";
+    document.getElementById("state1").className = "actuadorRojo";
   }
 
   document.getElementById("state2").innerHTML = parsed[1];
 
   if ( parsed[1] == "<!--#act2-->ENCENDIDO" ) {
     document.getElementById("actuador2").value = "DETENER";
-    document.getElementById("state2").className = "actuadorEncendido";
+    document.getElementById("state2").className = "actuadorVerde";
   }
   else {
     document.getElementById("actuador2").value = "INICIAR";
-    document.getElementById("state2").className = "actuadorApagado";
+    document.getElementById("state2").className = "actuadorRojo";
   }
 
   document.getElementById("state3").innerHTML = parsed[2];
+
   if ( parsed[2] == "<!--#act3-->ENCENDIDO" ) {
     document.getElementById("actuador3").value = "DETENER";
-    document.getElementById("state3").className = "actuadorEncendido";
+    document.getElementById("state3").className = "actuadorVerde";
   }
   else {
     document.getElementById("actuador3").value = "INICIAR";
-    document.getElementById("state3").className = "actuadorApagado";
+    document.getElementById("state3").className = "actuadorRojo";
   }
 
   document.getElementById("state4").innerHTML = parsed[3];
+
   if ( parsed[3] == "<!--#act4-->ENCENDIDO" ) {
     document.getElementById("actuador4").value = "DETENER";
-    document.getElementById("state4").className = "actuadorEncendido";
+    document.getElementById("state4").className = "actuadorVerde";
   }
   else {
     document.getElementById("actuador4").value = "INICIAR";
-    document.getElementById("state4").className = "actuadorApagado";
+    document.getElementById("state4").className = "actuadorRojo";
   }
 
 
   document.getElementById("sensor1").innerHTML = parsed[4];
   document.getElementById("sensor2").innerHTML = parsed[5];
   document.getElementById("sensor3").innerHTML = parsed[6];
-  document.getElementById("alarm1").innerHTML = parsed[7];
-  document.getElementById("alarm2").innerHTML = parsed[8];
-  document.getElementById("alarm3").innerHTML = parsed[9];
 
 
+  document.getElementById("alarm1").innerHTML  = parsed[7];
+
+  if ( parsed[7] == "<!--#alarma1-->NORMAL" ) {
+    document.getElementById("alarm1").className = "alarmaVerde";
+  }
+  else {
+   document.getElementById("alarm1").className = "alarmaRojo";
+  }
+
+  document.getElementById("alarm2").innerHTML  = parsed[8];
+
+  if ( parsed[8] == "<!--#alarma2-->NORMAL" ) {
+    document.getElementById("alarm2").className = "alarmaVerde";
+  }
+  else {
+   document.getElementById("alarm2").className = "alarmaRojo";
+  }
+
+  document.getElementById("alarm3").innerHTML  = parsed[9];
+
+  if ( parsed[9] == "<!--#alarma3-->NORMAL" ) {
+    document.getElementById("alarm3").className = "alarmaVerde";
+  }
+  else {
+   document.getElementById("alarm3").className = "alarmaRojo";
+  }
+
+  document.getElementById("alarm4").innerHTML  = parsed[10];
+
+  if ( parsed[10] == "<!--#alarma4-->NORMAL" ) {
+    document.getElementById("alarm4").className = "alarmaVerde";
+  }
+  else {
+   document.getElementById("alarm4").className = "alarmaRojo";
+  }
 
 }
 

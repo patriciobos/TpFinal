@@ -2,22 +2,24 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="pbuf_free" key="selection"/>
-		<item value="false" key="casesensitive"/>
+		<item value="UARTx_RX_MODE" key="selection"/>
+		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="UARTx_RX_MODE"/>
+			<item value="getActuatorState(portNum_"/>
+			<item value="actuator"/>
+			<item value="reclaim"/>
 			<item value="pbuf_free"/>
 			<item value="free"/>
 			<item value="reference"/>
 			<item value="lpc_num_buff"/>
-			<item value="cgi"/>
-			<item value="TaskEXIT_CRITICAL"/>
-			<item value="TaskEXIT_CRITICAL();"/>
-			<item value="tSSIHandler"/>
 		</list>
 		<list key="replacehistory">
+			<item value="getAlarmState(alarmNum_"/>
+			<item value="alarm"/>
 			<item value="int"/>
 			<item value="uint32_t"/>
 			<item value="uint16_t"/>

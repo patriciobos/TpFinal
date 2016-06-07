@@ -68,6 +68,8 @@ extern "C" {
     is also the port used for Board_UARTPutChar, Board_UARTGetChar, and
 	Board_UARTPutSTR functions. */
 #define DEBUG_UART LPC_USART2
+#define UARTx_IRQn USART2_IRQn
+#define UARTx_IRQHandler UART2_IRQHandler
 
 /**
  * @}
@@ -78,6 +80,20 @@ extern "C" {
 
 /* Build for RMII interface */
 #define USE_RMII
+
+
+
+/* Transmit and receive ring buffers */
+static RINGBUFF_T txring, rxring;
+
+/* Transmit and receive ring buffer sizes */
+#define UART_SRB_SIZE 128	/* Send */
+#define UART_RRB_SIZE 32	/* Receive */
+
+/* Transmit and receive buffers */
+static uint8_t rxbuff[UART_RRB_SIZE], txbuff[UART_SRB_SIZE];
+
+
 
 /* For USBLIB examples */
 #define LEDS_LED1           0x01
@@ -102,6 +118,8 @@ extern "C" {
 #define LED1_GPIO_BIT_NUM               11
 #define LED2_GPIO_PORT_NUM              1
 #define LED2_GPIO_BIT_NUM               12
+
+void Board_UARTPutSTRrb(const char *str);
 
 /**
  * @brief	Sets up board specific I2C interface
